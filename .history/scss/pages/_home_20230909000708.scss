@@ -1,0 +1,414 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1170px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $color-gray;
+    border-bottom: 2px solid #eee;
+
+    &-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            padding: 10px 13px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        &__link {
+            position: relative;
+            display: inline-block;
+            color: $color-black;
+
+            &.active {
+                @include active;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+.line-effect {
+    @include active-lineEffect;
+}
+
+.line-clamp {
+    --line-clamp: 2;
+    @include line-clamp;
+}
+
+.banner {
+    margin-top: 15px;
+    width: 100%;
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    &__picture {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__btn {
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        left: 20px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        > * {
+            pointer-events: none;
+        }
+
+        i {
+            font-size: 1rem;
+            color: #eee;
+        }
+
+        &:last-child {
+            left: 1070px;
+        }
+    }
+}
+
+.recommend {
+    &__info {
+        @include info;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // rcm-1
+        &.info-1 {
+            justify-content: start;
+        }
+
+        &-left {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        &-right {
+            > a {
+                color: $color-red;
+            }
+
+            > i {
+                color: $color-red;
+            }
+        }
+    }
+
+    &__heading {
+        @include heading;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: #000;
+        border-radius: 99px;
+
+        > i {
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+
+    // list
+    &__list {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 170px;
+        height: 240px;
+        border: 1px solid #eee;
+        transition: all 0.2s ease;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+
+    .recommend__title {
+        color: #000;
+        margin: 10px 0;
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        @include font-suisseIntl;
+    }
+
+    &__pic {
+        padding-top: 20px;
+        width: 140px;
+        height: 90px;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+
+        > i {
+            color: #000;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__desc {
+        color: #000;
+        margin: 15px 0 10px;
+        font-size: 1.2rem;
+    }
+
+    &__buy {
+        color: #000;
+        display: block;
+        @include font-suisseIntl;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    &__sale {
+        color: #000;
+        background: #eee;
+        font-size: 1.3rem;
+    }
+
+    &__body,
+    &__arrow {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 99px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+
+            i {
+                color: #fff;
+            }
+        }
+
+        > * {
+            pointer-events: none;
+        }
+
+        > i {
+            font-size: 1.2rem;
+            color: #000;
+        }
+    }
+}
+
+.brand {
+    &__info {
+        @include info;
+    }
+
+    &__heading {
+        @include heading;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__item {
+        transition: all 0.2s ease;
+    }
+
+    &__pic {
+        width: 200px;
+        height: 160px;
+    }
+}
+
+.rcm-2__list {
+    // container set m-width: 1170px rồi
+    // thằng thẻ con tắt cái bẻ xún dòng thêm thanh cuộn ngang vào
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.rcm-2__list {
+    /* thuộc tính đặc biệt dành cho Internet Explorer */
+    -ms-overflow-style: none;
+    /*  sử dụng để ẩn thanh cuộn mặc định trên các trình duyệt hiện đại. */
+    scrollbar-width: none;
+}
+
+.seen-ins {
+    margin-top: 20px;
+
+    &__heading {
+        @include heading;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+    }
+
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    &__item {
+        width: 296px;
+        height: 296px;
+    }
+
+    &__pic {
+        width: 265px;
+        height: 265px;
+        object-fit: cover;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__btn {
+        position: absolute;
+        @include button-arrow;
+        height: 40px;
+        width: 40px;
+        background: #000;
+        @include hidden;
+
+        // &.hidden {
+        //     @include hidden;
+        // }
+
+        // &.visible {
+        //     @include visible;
+        // }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        &.left {
+            left: -20px;
+            &.visible {
+                @include visible;
+            }
+        }
+
+        &.right {
+            left: 1120px;
+            &.visible {
+                @include visible;
+            }
+        }
+
+        > i {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        > * {
+            pointer-events: none;
+        }
+    }
+}
+
+.visible {
+    @include visible;
+}
+
+.fall {
+    &__pic {
+        display: block;
+        width: 100%;
+        height: 380px;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+.name-brand {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    &__inner {
+        align-items: center;
+    }
+
+    &__img {
+        // vì 1 row gồm 5 col và mỗi col là w20% (mỗi item) => thẻ con w và h 100% (ăn theo thẻ cha item)
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.adver {
+    &__thumb {
+        position: fixed;
+
+        &-1 {
+            top: -4000px;
+            left: 0;
+        }
+    }
+
+    &__p
+}

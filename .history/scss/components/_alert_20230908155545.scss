@@ -1,0 +1,39 @@
+@import "../abstracts";
+.alert {
+    position: relative;
+    top: -3250px;
+    left: 1130px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    animation: fade 2s linear 1;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 15px;
+    }
+
+    &__circle {
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+
+        background: #405ff9;
+
+        > i {
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: translateX(50%);
+    }
+    20%,8 {
+        transform: translateX(0%);
+    }
+}

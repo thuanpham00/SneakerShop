@@ -1,0 +1,15 @@
+@import "../abstracts";
+
+.modal {
+    // position: fixed;
+    // top: 4000px;
+    // left: 0;
+    background: red;
+    
+
+    &__body {
+        background: red;
+        width: 500px;
+        height: 350px;
+    }
+}

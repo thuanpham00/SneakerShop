@@ -1,0 +1,133 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1170px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: $color-gray;
+    border-bottom: 2px solid #eee;
+
+    &-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            padding: 10px 13px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        &__link {
+            position: relative;
+            display: inline-block;
+            color: $color-black;
+
+            &.active {
+                @include active;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+.line-effect {
+    @include active-lineEffect;
+}
+
+.banner {
+    margin-top: 20px;
+    width: 100%;
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    &__picture {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__btn {
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.25);
+        position: absolute;
+        left: 20px;
+
+        > * {
+            pointer-events: none;
+        }
+
+        i {
+            font-size: 1rem;
+            color: #eee;
+        }
+
+        &:last-child {
+            left: 1070px;
+        }
+    }
+}
+
+.recommend {
+    &__info {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__heading {
+        margin: 20px 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0px;
+        word-spacing: -1px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: #000;
+        border-radius: 99px;
+
+        > i {
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+
+    // list
+    &__list {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+        // margin-left: 0px;
+        max-width: 170px;
+        height: 240px;
+        border: 1px solid #eee;
+    }
+
+    &__pic {
+        padding: 10px 0px;
+        width: 140px;
+        height: 75px;
+    }
+}

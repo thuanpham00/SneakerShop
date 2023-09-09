@@ -1,0 +1,27 @@
+@import "../abstracts";
+
+.modal {
+    position: fixed;
+    top: 4000px;
+    left: 0;
+    background: red;
+    width: 500px;
+    height: 400px;
+
+    &__body {
+        background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__left {
+        width: 300px;
+        height: 350px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

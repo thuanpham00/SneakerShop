@@ -1,0 +1,17 @@
+.alert {
+    position: relative;
+    top: -3250px;
+    left: 1000px;
+
+    &__body {
+        display: flex;
+    }
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        h50
+    }
+}

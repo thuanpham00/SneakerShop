@@ -1,0 +1,22 @@
+@mixin active {
+    color: #ffba00;
+    transition: color 0.2s linear;
+}
+
+@mixin transition($args: all 0.3s ease 0s) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin visible {
+    display: block;
+    @keyframes ease {
+        from {
+            tran
+        } 
+        to {
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../abstracts";
+.alert {
+    position: relative;
+    top: -3250px;
+    left: 1000px;
+
+    &__body {
+        display: flex;
+    }
+
+    &__circle {
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+
+        background: #405ff9;
+
+        > i {
+            font-size: 1rem;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../abstracts";
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #eee;
+
+    &-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            padding: 10px;
+
+            &
+        }
+        
+        &__link {
+            color: $color-black;
+
+            &.active {
+                @include active;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@mixin active {
+    color: #d10024;
+    transition: color 0.2s linear;
+}
+
+@mixin transition($args: all 0.3s ease 0s) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease;
+}
+
+@mixin hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+}
+
+@mixin sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    max-width: 100%;
+}
+
+@mixin active-lineEffect {
+    width: 0;
+    height: 2px;
+    background: #d10024;
+    position: fixed;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+@mixin button-arrow {
+    border-radius: 99px;
+    df
+}
