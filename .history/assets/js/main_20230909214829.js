@@ -230,7 +230,7 @@ console.log(bannerHeight);
 window.addEventListener(
     "scroll",
     debounceFn(function (e) {
-        const pageY = window.scrollY;
+        const pageY = window.pageYOffset;
         console.log(pageY);
         if (pageY > bannerHeight) {
             // bannerHeight == 360

@@ -1604,6 +1604,7 @@ button {
   position: absolute;
   right: 8px;
   top: 8px;
+  cursor: pointer;
 }
 .recommend__icon > i {
   color: #000;
