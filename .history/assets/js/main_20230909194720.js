@@ -202,23 +202,8 @@ window.addEventListener("load", function () {
             </div>
         </div>
     </div>`;
-    document.body.insertAdjacentHTML("beforeend", templateModal);
     }
-    const rcmItem = document.querySelectorAll(".recommend__item");
-    [...rcmItem].forEach((item) =>
-        item.addEventListener("click", function (e) {
-            createModal()
-        })
-    );
-    document.body.addEventListener("click", function(e) {
-        if(e.target.matches(".modal__icon")) {
-            const removeModal = e.target.parentNode.parentNode.parentNode;
-            removeModal.parentNode.removeChild(removeModal)
-        } else if(e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target)
-        }
-    })
-    
+    document.body.insertAdjacentHTML("beforeend", template);
 });
 
 // advertisement__banner-sidebar

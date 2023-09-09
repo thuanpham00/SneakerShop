@@ -211,11 +211,8 @@ window.addEventListener("load", function () {
         })
     );
     document.body.addEventListener("click", function(e) {
-        if(e.target.matches(".modal__icon")) {
-            const removeModal = e.target.parentNode.parentNode.parentNode;
-            removeModal.parentNode.removeChild(removeModal)
-        } else if(e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target)
+        if(e.target.matches("modal__icon")) {
+            console.log("kaka")
         }
     })
     

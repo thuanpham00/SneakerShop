@@ -215,7 +215,7 @@ window.addEventListener("load", function () {
             const removeModal = e.target.parentNode.parentNode.parentNode;
             removeModal.parentNode.removeChild(removeModal)
         } else if(e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target)
+            e.target.pa
         }
     })
     

@@ -184,41 +184,7 @@ window.addEventListener("load", function () {
     }
 
     // modal
-    function createModal() {
-        const templateModal = `<div class="modal">
-        <div class="container">
-            <div class="modal__body">
-                <figure class="modal__left">
-                    <img
-                        src="./assets/img/sneaker/recommend_1.avif"
-                        alt=""
-                        class="modal__img"
-                    />
-                </figure>
-                <div class="modal__right">thuan</div>
-                <div class="modal__icon">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-            </div>
-        </div>
-    </div>`;
-    document.body.insertAdjacentHTML("beforeend", templateModal);
-    }
-    const rcmItem = document.querySelectorAll(".recommend__item");
-    [...rcmItem].forEach((item) =>
-        item.addEventListener("click", function (e) {
-            createModal()
-        })
-    );
-    document.body.addEventListener("click", function(e) {
-        if(e.target.matches(".modal__icon")) {
-            const removeModal = e.target.parentNode.parentNode.parentNode;
-            removeModal.parentNode.removeChild(removeModal)
-        } else if(e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target)
-        }
-    })
-    
+    function create
 });
 
 // advertisement__banner-sidebar
@@ -231,7 +197,7 @@ window.addEventListener(
     "scroll",
     debounceFn(function (e) {
         const pageY = window.pageYOffset;
-        console.log(pageY);
+        console.log(pageY)
         if (pageY > bannerHeight) {
             // bannerHeight == 360
             advertisement1.classList.add("visible");

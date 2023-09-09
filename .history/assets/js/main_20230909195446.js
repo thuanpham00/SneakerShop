@@ -214,9 +214,7 @@ window.addEventListener("load", function () {
         if(e.target.matches(".modal__icon")) {
             const removeModal = e.target.parentNode.parentNode.parentNode;
             removeModal.parentNode.removeChild(removeModal)
-        } else if(e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target)
-        }
+        } else if(e.target.matches(".modal"))
     })
     
 });
