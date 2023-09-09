@@ -231,6 +231,9 @@ window.addEventListener(
     "scroll",
     debounceFn(function (e) {
         const pageY = window.scrollY;
+        console.log(`scrollY: ${pageY}`);
+        const pageY2 = window.pageYOffset;
+        console.log(`scrollY: ${pageY2}`);
         if (pageY > bannerHeight) {
             // bannerHeight == 360
             advertisement1.classList.add("visible");
