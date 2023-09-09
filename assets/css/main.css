@@ -1806,7 +1806,7 @@ button {
 .adver__thumb-1 {
   position: fixed;
   top: 180px;
-  left: 35px;
+  left: 1rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
@@ -1820,7 +1820,7 @@ button {
 .adver__thumb-2 {
   position: fixed;
   top: 180px;
-  left: 1350px;
+  right: 1rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;

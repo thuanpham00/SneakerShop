@@ -58,13 +58,13 @@ window.addEventListener("load", function () {
     // banner
     var img = [
         "assets/img/banner/2.jpg",
-        "assets/img/banner/1.jpg",
-        "assets/img/banner/3.jpg",
-        "assets/img/banner/4.jpg",
-        "assets/img/banner/5.jpg",
-        "assets/img/banner/6.jpg",
-        "assets/img/banner/7.jpg",
-        "assets/img/banner/8.jpg",
+        "assets/img/banner/1.webp",
+        "assets/img/banner/3.webp",
+        "assets/img/banner/4.webp",
+        "assets/img/banner/5.webp",
+        "assets/img/banner/6.webp",
+        "assets/img/banner/7.webp",
+        "assets/img/banner/8.webp",
     ];
     let index = 0;
     const picture = document.querySelector(".banner__picture");
