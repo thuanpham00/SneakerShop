@@ -192,13 +192,12 @@ const banner_advertisement = document.querySelector(".banner");
 const bannerHeight = banner_advertisement && banner_advertisement.offsetHeight; // 360
 const advertisement1 = document.querySelector(".adver__thumb-1");
 const advertisement2 = document.querySelector(".adver__thumb-2");
-console.log(bannerHeight);
+console.log(bannerHeight)
 window.addEventListener(
     "scroll",
     debounceFn(function (e) {
         const pageY = window.pageYOffset;
-        if (pageY > bannerHeight) {
-            // bannerHeight == 360
+        if (pageY > bannerHeight) { // bannerHeight == 360
             advertisement1.classList.add("visible");
             advertisement2.classList.add("visible");
         }
@@ -208,3 +207,5 @@ window.addEventListener(
         }
     }, 100)
 );
+
+
