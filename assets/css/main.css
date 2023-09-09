@@ -1247,7 +1247,8 @@ button {
   height: 350px;
 }
 .modal__img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 .modal__icon {
@@ -1805,7 +1806,7 @@ button {
 .adver__thumb-1 {
   position: fixed;
   top: 180px;
-  left: 25px;
+  left: 35px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;

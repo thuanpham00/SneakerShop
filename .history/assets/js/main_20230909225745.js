@@ -204,11 +204,11 @@ window.addEventListener("load", function () {
     </div>`;
         document.body.insertAdjacentHTML("beforeend", templateModal);
     }
-    const rcmImg = document.querySelectorAll(".recommend__pic");
+    const rcmImg = document.querySelectorAll(".recommend__item");
     [...rcmImg].forEach((item) =>
         item.addEventListener("click", function (e) {
-            const image = item.getAttribute("src")
-            createModal(image)
+            const image = item.querySelectorAll(".recommend__pic");
+            [...image].forEach(item => item.addEventListener())
         })
     );
     document.body.addEventListener("click", function (e) {

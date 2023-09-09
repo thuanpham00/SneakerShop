@@ -204,7 +204,7 @@ window.addEventListener("load", function () {
     </div>`;
         document.body.insertAdjacentHTML("beforeend", templateModal);
     }
-    const rcmImg = document.querySelectorAll(".recommend__pic");
+    const rcmImg = document.querySelectorAll(".recommend__item");
     [...rcmImg].forEach((item) =>
         item.addEventListener("click", function (e) {
             const image = item.getAttribute("src")

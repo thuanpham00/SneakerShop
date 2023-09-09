@@ -206,9 +206,15 @@ window.addEventListener("load", function () {
     }
     const rcmImg = document.querySelectorAll(".recommend__pic");
     [...rcmImg].forEach((item) =>
+        item.addEventListener("click", function (e) {})
+    );
+    const rcmItem = document.querySelectorAll(".recommend__item");
+    [...rcmItem].forEach((item) =>
         item.addEventListener("click", function (e) {
-            const image = item.getAttribute("src")
-            createModal(image)
+            const image = item.querySelectorAll(".recommend__pic");
+            const imagee = image.getAttribute("src");
+            // createModal(image)
+            console.log(imagee);
         })
     );
     document.body.addEventListener("click", function (e) {

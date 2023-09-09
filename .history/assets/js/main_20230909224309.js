@@ -184,7 +184,7 @@ window.addEventListener("load", function () {
     }
 
     // modal
-    function createModal(image) {
+    function createModal() {
         const templateModal = `<div class="modal">
         <div class="container">
             <div class="modal__body">
@@ -202,23 +202,23 @@ window.addEventListener("load", function () {
             </div>
         </div>
     </div>`;
-        document.body.insertAdjacentHTML("beforeend", templateModal);
+    document.body.insertAdjacentHTML("beforeend", templateModal);
     }
-    const rcmImg = document.querySelectorAll(".recommend__pic");
-    [...rcmImg].forEach((item) =>
+    const rcmItem = document.querySelectorAll(".recommend__item");
+    [...rcmItem].forEach((item) =>
         item.addEventListener("click", function (e) {
-            const image = item.getAttribute("src")
-            createModal(image)
+            createModal()
         })
     );
-    document.body.addEventListener("click", function (e) {
-        if (e.target.matches(".modal__icon")) {
+    document.body.addEventListener("click", function(e) {
+        if(e.target.matches(".modal__icon")) {
             const removeModal = e.target.parentNode.parentNode.parentNode;
-            removeModal.parentNode.removeChild(removeModal);
-        } else if (e.target.matches(".modal")) {
-            e.target.parentNode.removeChild(e.target);
+            removeModal.parentNode.removeChild(removeModal)
+        } else if(e.target.matches(".modal")) {
+            e.target.parentNode.removeChild(e.target)
         }
-    });
+    })
+    
 });
 
 // advertisement__banner-sidebar
