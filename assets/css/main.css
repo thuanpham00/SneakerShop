@@ -1239,28 +1239,217 @@ button {
   height: 500px;
   background: #fff;
   display: flex;
-  align-items: center;
-  border-radius: 5px;
+  justify-content: space-between;
+  column-gap: 20px;
+  border-radius: 15px;
+  padding: 20px;
 }
 .modal__left {
-  width: 300px;
-  height: 350px;
+  margin-top: 50px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal__heading {
+  border-radius: 2px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .modal__img {
-  width: 200px;
-  height: 200px;
+  margin-top: 150px;
+  width: 100%;
+  height: 120px;
   object-fit: contain;
+}
+.modal__right {
+  margin-top: 50px;
+  width: 400px;
+}
+.modal__box {
+  margin-top: 10px;
+  border: 2px solid #cfcfcf;
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+}
+.modal-tableSize {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background: #fff;
+  padding: 10px 20px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.modal-tableSize__row {
+  width: 100%;
+  text-align: center;
+  border: 2px solid #006340;
+  padding: 10px 15px;
+}
+.modal-tableSize.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}
+.modal-tableSize__list {
+  margin-top: 10px;
+}
+.modal-tableSize__item {
+  padding: 10px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+.modal-tableSize__item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.modal-tableSize__size {
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.modal-sold, .modal-info, .modal-buy {
+  display: flex;
+  align-items: center;
+}
+.modal-sold {
+  background: #e9e8e3;
+}
+.modal-sold__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.modal-info {
+  margin-top: 10px;
+  width: 380px;
+  padding: 15px;
+  justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.modal-info__all {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  outline: none;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.modal-buy {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.modal-buy__btn {
+  width: 185px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-buy__btn > a {
+  color: #000;
+  font-weight: 600;
+}
+.modal-buy__btn.btn-2 {
+  background: #006340;
+  border-color: #006340;
+}
+.modal-buy__btn.btn-2 > a {
+  color: #fff;
+}
+.modal-buy__btn.btn-2:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.modal-buy__btn:hover {
+  background: #000;
+}
+.modal-buy__btn:hover a {
+  color: #fff;
+}
+.modal-quantity {
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-quantity > span {
+  font-weight: 500;
+}
+.modal-quantity__counter {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.modal-quantity__counterNumber {
+  padding: 0 40px;
+}
+.modal-quantity__counterRight, .modal-quantity__counterLeft {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #dadada;
+  width: 30px;
+  height: 30px;
+}
+.modal-quantity__counterRight > *, .modal-quantity__counterLeft > * {
+  pointer-events: none;
 }
 .modal__icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
+  display: block;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
 }
 .modal__icon > i {
   font-size: 2rem;
 }
 .modal__icon > * {
   pointer-events: none;
+}
+.modal__priceProduct {
+  margin-top: 20px;
+}
+.modal__priceProduct-row2, .modal__priceProduct-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modal__priceProduct-row2 {
+  column-gap: 5px;
+}
+.modal__priceProduct > span {
+  font-family: sans-serif;
+}
+
+.priceTotal {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .container {
@@ -1585,6 +1774,9 @@ button {
 .recommend__item:hover {
   transform: scale(1.1);
 }
+.recommend__item > * {
+  pointer-events: none;
+}
 .recommend__link {
   display: block;
 }
@@ -1616,7 +1808,7 @@ button {
   margin: 15px 0 10px;
   font-size: 1.2rem;
 }
-.recommend__buy {
+.recommend__usd, .recommend__buy {
   color: #000;
   display: block;
   font-family: "Suisse Intl";
@@ -1657,6 +1849,11 @@ button {
 .recommend__btn > i {
   font-size: 1.2rem;
   color: #000;
+}
+.recommend-row {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 
 .brand__info {

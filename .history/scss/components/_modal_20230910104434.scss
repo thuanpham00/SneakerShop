@@ -1,0 +1,162 @@
+@import "../abstracts";
+
+.modal {
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+
+    &__body {
+        @include center_abs;
+        width: 800px;
+        height: 500px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    &__left {
+        width: 400px;
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__img {
+        margin-top: 120px;
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    &__right {
+        margin-top: 80px;
+        width: 400px;
+    }
+
+    &__box {
+        margin-top: 10px;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        width: 400px;
+        height: 220px;
+        padding: 10px;
+    }
+
+    &-sold,
+    &-info,
+    &-buy {
+        display: flex;
+        align-items: center;
+    }
+
+    &-sold {
+        background: #e9e8e3;
+        &__icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+    }
+
+    &-info {
+        margin-top: 10px;
+        width: 380px;
+        padding: 15px;
+        justify-content: space-between;
+        border: 1px solid #000;
+        border-radius: 5px;
+
+        &__all {
+            outline: none;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    &-buy {
+        margin-top: 20px;
+        justify-content: space-between;
+        &__btn {
+            width: 185px;
+            height: 50px;
+            background: #fff;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > a {
+                color: #000;
+                font-weight: 600;
+            }
+
+            &.btn-2 {
+                background: #006340;
+                border-color: #006340;
+
+                > a {
+                    color: #fff
+                }
+
+                &:hover {
+                    background: rgba(0,0,0,0.8);
+                }
+            }
+
+            &:hover {
+                background: #000;
+                
+            }
+
+            &:hover a {
+                color: #fff
+            }
+        }
+    }
+
+    &-quantity {
+        border: 1px solid #000;
+        padding: 10px 15px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__counter {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        &__counterLeft {
+            
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+
+        > i {
+            font-size: 2rem;
+        }
+
+        > * {
+            pointer-events: none;
+        }
+    }
+}
