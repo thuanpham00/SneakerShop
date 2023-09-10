@@ -281,7 +281,7 @@ window.addEventListener("load", function () {
                             </div>
                             <div class="modal-buy__btn btn-2">
                                 <a href="#!" class="modal-buy__link"
-                                    >Buy for ${price} $</a
+                                    >Buy for ${price} </a
                                 >
                             </div>
                         </div>
