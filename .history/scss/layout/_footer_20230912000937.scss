@@ -1,0 +1,119 @@
+@import "../abstracts/";
+.footer {
+    margin-top: 50px;
+    background: #242424;
+    padding-top: 100px;
+
+    @include screen(lg) {
+        padding-top: 20px;
+    }
+
+    &__desc {
+        margin-top: 21px;
+        color: #a9b3bb;
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__list {
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: #a9b3bb;
+        font-size: 1.4rem;
+        line-height: 1.86;
+        white-space: nowrap;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @include screen(md) {
+            font-size: 1rem;
+        }
+
+        @include screen(md) {
+            font-size: 1rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__social-btn {
+        margin-bottom: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #fff;
+        color: #2e80ce;
+        transition: 0.3s;
+
+        &:hover {
+            color: #fff;
+            background: #2e80ce;
+        }
+    }
+
+    &-form {
+        display: flex;
+        margin-top: 10px;
+        column-gap: 12px;
+
+        &__input {
+            padding: 0 10px;
+            width: 212px;
+            height: 46px;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            background: transparent;
+            color: #fff;
+
+            &::placeholder {
+                color: #9ca8b1;
+                font-size: 1.4rem;
+                line-height: 1.86;
+            }
+        }
+
+        &__submit {
+            min-width: 108px;
+            height: 46px;
+            line-height: 46px;
+            border-radius: 4px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__copyright {
+        padding: 28px 0 42px;
+        border-top: 1px solid #eee;
+    }
+
+    &__copyright-text {
+        color: #aab3ba;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.86;
+    }
+}

@@ -1,0 +1,346 @@
+@import "../abstracts";
+
+.modal {
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+
+    &__body {
+        @include center_abs;
+        width: 800px;
+        height: 500px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        border-radius: 15px;
+        padding: 20px;
+
+        @include screen(lg) {
+            width: 750px;
+        }
+
+        @include screen(md) {
+            width: 550px;
+        }
+
+        @include screen(sm) {
+            width: 350px;
+            height: 300px;
+        }
+    }
+
+    &__left {
+        margin-top: 20px;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        border-radius: 2px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.2;
+
+        @include screen(sm) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__img {
+        margin-top: 150px;
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    &__right {
+        margin-top: 20px;
+        width: 400px;
+
+        @include screen(md) {
+            width: 250px;
+        }
+
+        @include screen(sm) {
+            width: 250px;
+        }
+    }
+
+    &__box {
+        margin-top: 5px;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        width: 400px;
+        padding: 10px;
+        position: relative;
+
+        @include screen(md) {
+            width: 250px;
+        }
+
+        @include screen(sm) {
+            width: 200px;
+        }
+    }
+
+    &-tableSize {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        padding: 10px 20px;
+        z-index: 1;
+        @include hidden;
+
+        &__row {
+            width: 100%;
+            text-align: center;
+            border: 2px solid $color-green;
+            padding: 10px 15px;
+        }
+
+        &.visible {
+            @include visible;
+        }
+
+        &__list {
+            margin-top: 10px;
+            // column-gap: 5px
+        }
+
+        &__item {
+            padding: 10px;
+            border: 2px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        &__size {
+            font-weight: 600;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        @include screen(md) {
+            left: 1rem;
+            width: 230px;
+        }
+
+        @include screen(sm) {
+            left: 1rem;
+            width: 200px;
+        }
+    }
+
+    &-sold,
+    &-info,
+    &-buy {
+        display: flex;
+        align-items: center;
+    }
+
+    &-sold {
+        background: #e9e8e3;
+        &__icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        &__desc {
+            font-size: 1rem;
+        }
+
+        @include screen(sm) 
+    }
+
+    &-info {
+        margin-top: 5px;
+        width: 380px;
+        padding: 15px;
+        justify-content: space-between;
+        border: 1px solid #000;
+        border-radius: 5px;
+
+        &__all {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            outline: none;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        @include screen(md) {
+            width: 230px;
+        }
+        @include screen(sm) {
+            width: 180px;
+            padding: 5px 10px;
+        }
+        
+    }
+
+    &-buy {
+        margin-top: 20px;
+        justify-content: space-between;
+        &__btn {
+            width: 185px;
+            height: 50px;
+            background: #fff;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > a {
+                color: #000;
+                font-weight: 600;
+            }
+
+            &.btn-2 {
+                background: #006340;
+                border-color: #006340;
+
+                > a {
+                    color: #fff;
+                }
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                }
+            }
+
+            &:hover {
+                background: #000;
+            }
+
+            &:hover a {
+                color: #fff;
+            }
+        }
+    }
+
+    &-quantity {
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding: 10px 15px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > span {
+            font-weight: 500;
+        }
+
+        &__counter {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        &__counterNumber {
+            padding: 0 40px;
+
+            @include screen(md) {
+                padding: 0 20px;
+            }
+        }
+
+        &__counterRight,
+        &__counterLeft {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background: #dadada;
+            width: 30px;
+            height: 30px;
+
+            > * {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        @include button-arrow;
+        width: 40px;
+        height: 40px;
+
+        > i {
+            font-size: 2rem;
+        }
+
+        > * {
+            pointer-events: none;
+        }
+
+        @include screen(sm) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__priceProduct {
+        margin-top: 20px;
+
+        &-row2,
+        &-row {
+            @include row;
+            margin-top: 10px;
+        }
+
+        &-row2 {
+            column-gap: 5px;
+        }
+
+        > span {
+            font-family: sans-serif;
+        }
+    }
+}
+
+.priceTotal {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart {
+    margin-left: auto;
+    margin-top: 10px;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 20px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(0,0,0,0.25);
+    }
+
+    > a {
+        color: #000;
+    }
+}
