@@ -479,14 +479,6 @@
             @include screen(lg) {
                 display: none;
             }
-
-            @include screen(md) {
-                display: none;
-            }
-
-            @include screen(sm) {
-                display: none;
-            }
         }
     }
 

@@ -131,7 +131,6 @@
 
         &__left {
             width: 160px;
-            height: 100%;
             cursor: pointer;
             position: relative;
             display: flex;
@@ -140,6 +139,7 @@
             column-gap: 20px;
             border-radius: 20px 0px 0px 20px;
             border: 1px solid red;
+            height: 100%;
             padding-left: 20px;
             background: #fff;
 

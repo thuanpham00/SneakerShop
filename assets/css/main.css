@@ -1877,6 +1877,7 @@ button {
 }
 .header-search__left {
   width: 160px;
+  height: 100%;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -2727,6 +2728,16 @@ button {
     display: none;
   }
 }
+@media (max-width: 767.98px) {
+  .adver__thumb-1 {
+    display: none;
+  }
+}
+@media (max-width: 576.98px) {
+  .adver__thumb-1 {
+    display: none;
+  }
+}
 .adver__thumb-2 {
   position: fixed;
   top: 180px;
@@ -2742,6 +2753,16 @@ button {
   transition: all 0.2s ease;
 }
 @media (max-width: 991.98px) {
+  .adver__thumb-2 {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .adver__thumb-2 {
+    display: none;
+  }
+}
+@media (max-width: 576.98px) {
   .adver__thumb-2 {
     display: none;
   }
