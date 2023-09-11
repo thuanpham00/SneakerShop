@@ -148,8 +148,7 @@
         }
 
         @include screen(sm) {
-            top: 35px;
-            left: -0.1rem;
+            left: 0rem;
             width: 200px;
         }
     }

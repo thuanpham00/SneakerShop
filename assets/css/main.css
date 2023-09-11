@@ -1419,7 +1419,8 @@ button {
 }
 @media (max-width: 576.98px) {
   .modal-tableSize {
-    left: 1rem;
+    top: 35px;
+    left: -0.1rem;
     width: 200px;
   }
 }
