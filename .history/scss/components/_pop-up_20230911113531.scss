@@ -1,0 +1,11 @@
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.25);
+
+    &__body {
+        width: 500px;
+        height: 200px;
+    }
+}

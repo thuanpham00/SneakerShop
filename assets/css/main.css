@@ -1166,6 +1166,12 @@ button {
 .button-login:hover {
   background: #cf3d3d;
 }
+@media (max-width: 991.98px) {
+  .button-login {
+    font-size: 0.9rem;
+    padding: 5px 22px;
+  }
+}
 
 .sign-up {
   background: #fff;
@@ -1243,6 +1249,11 @@ button {
   column-gap: 20px;
   border-radius: 15px;
   padding: 20px;
+}
+@media (max-width: 991.98px) {
+  .modal__body {
+    width: 750px;
+  }
 }
 .modal__left {
   margin-top: 20px;
@@ -1470,6 +1481,75 @@ button {
   color: #000;
 }
 
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+.pop-up.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}
+.pop-up.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+.pop-up__body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+.pop-up .icon {
+  height: 50px;
+  width: 50px;
+  background: #5643e3;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up .icon > i {
+  font-size: 3rem;
+  color: #fff;
+}
+.pop-up span {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.pop-up .desc {
+  max-width: 270px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.pop-up .btn {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #5643e3;
+}
+.pop-up .btn > a {
+  color: #fff;
+}
+
 .container {
   max-width: 1170px;
 }
@@ -1503,6 +1583,12 @@ button {
 }
 .header-top__phone {
   color: #fff;
+  font-size: 1.2rem;
+}
+@media (max-width: 991.98px) {
+  .header-top__phone {
+    font-size: 1rem;
+  }
 }
 .header-top .icon {
   color: #d10024;
@@ -1516,6 +1602,17 @@ button {
 .header-bottom__inner {
   display: flex;
   align-items: center;
+}
+@media (max-width: 991.98px) {
+  .header-bottom__inner {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-bottom__logo {
+    width: 80px;
+    height: 40px;
+  }
 }
 .header-search {
   display: flex;
@@ -1537,6 +1634,11 @@ button {
 .header-search__left .categories {
   font-size: 1.4rem;
   color: #333;
+}
+@media (max-width: 991.98px) {
+  .header-search__left .categories {
+    font-size: 1.2rem;
+  }
 }
 .header-search__left i {
   font-size: 1.2rem;
@@ -1571,6 +1673,13 @@ button {
   visibility: visible;
   transition: all 0.2s ease;
 }
+@media (max-width: 991.98px) {
+  .header-search__left {
+    width: 120px;
+    padding-left: 10px;
+    column-gap: 5px;
+  }
+}
 .header-search__form {
   display: flex;
   height: 100%;
@@ -1586,6 +1695,11 @@ button {
 .header-search__input ::placeholder {
   font-size: 1.2rem;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .header-search__input {
+    width: 200px;
+  }
 }
 .header-search__submit {
   display: block;
@@ -1606,10 +1720,12 @@ button {
   column-gap: 20px;
   font-size: 1.4rem;
 }
+.header-buy__body {
+  position: relative;
+}
 .header-buy__icon {
   text-align: center;
 }
-.header-buy .number,
 .header-buy .icon {
   color: #fff;
   position: relative;
@@ -1623,21 +1739,119 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 55px;
+  top: 0px;
   width: 15px;
   height: 15px;
   border-radius: 99px;
   background: #d10024;
   font-size: 1rem;
+  color: #fff;
 }
 .header-buy .number--1 {
-  right: 30rem;
+  right: 2.5rem;
 }
 .header-buy .number--2 {
-  right: 20rem;
+  right: 1rem;
 }
 .header-buy .desc {
   color: #fff;
+}
+
+.footer {
+  margin-top: 50px;
+  background: #242424;
+  padding-top: 100px;
+}
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 20px;
+  }
+}
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+.footer__heading {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer__list {
+  margin-bottom: 28px;
+}
+.footer__item {
+  margin-bottom: 10px;
+}
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+}
+.footer__social-btn {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.3s;
+}
+.footer__social-btn:hover {
+  color: #fff;
+  background: #2e80ce;
+}
+.footer-form {
+  display: flex;
+  margin-top: 10px;
+  column-gap: 12px;
+}
+.footer-form__input {
+  padding: 0 10px;
+  width: 212px;
+  height: 46px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background: transparent;
+  color: #fff;
+}
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer-form__submit {
+  min-width: 108px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+}
+.footer__copyright {
+  padding: 28px 0 42px;
+  border-top: 1px solid #eee;
+}
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
 }
 
 .container {
@@ -1733,6 +1947,11 @@ button {
 .banner__btn:last-child {
   left: 1070px;
 }
+@media (max-width: 991.98px) {
+  .banner__btn:last-child {
+    left: 93%;
+  }
+}
 
 .recommend__info {
   display: flex;
@@ -1783,7 +2002,6 @@ button {
 }
 .recommend__item {
   position: relative;
-  max-width: 170px;
   height: 240px;
   border: 1px solid #eee;
   transition: all 0.2s ease;
@@ -1895,7 +2113,7 @@ button {
   transition: all 0.2s ease;
 }
 .brand__pic {
-  width: 200px;
+  width: 100%;
   height: 160px;
 }
 
@@ -1983,6 +2201,11 @@ button {
   visibility: visible;
   transition: all 0.2s ease;
 }
+@media (max-width: 991.98px) {
+  .seen-ins__btn.right {
+    left: 200px;
+  }
+}
 .seen-ins__btn > i {
   color: #fff;
   font-size: 1.5rem;
@@ -2032,6 +2255,11 @@ button {
   visibility: visible;
   transition: all 0.2s ease;
 }
+@media (max-width: 991.98px) {
+  .adver__thumb-1 {
+    display: none;
+  }
+}
 .adver__thumb-2 {
   position: fixed;
   top: 180px;
@@ -2045,6 +2273,11 @@ button {
   opacity: 1;
   visibility: visible;
   transition: all 0.2s ease;
+}
+@media (max-width: 991.98px) {
+  .adver__thumb-2 {
+    display: none;
+  }
 }
 .adver__image {
   width: 150px;
