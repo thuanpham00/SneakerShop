@@ -1945,7 +1945,7 @@ button {
   color: #eee;
 }
 .banner__btn:last-child {
-  left: 1070px;
+  left: 93%;
 }
 @media (max-width: 991.98px) {
   .banner__btn:last-child {
