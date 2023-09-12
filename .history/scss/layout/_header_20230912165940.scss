@@ -321,9 +321,7 @@
         }
 
         &__body:nth-child(1) {
-            @include screen(md) {
-                display: none;
-            }
+            
         }
 
         display: flex;

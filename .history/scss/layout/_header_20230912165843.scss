@@ -320,12 +320,6 @@
             text-align: center;
         }
 
-        &__body:nth-child(1) {
-            @include screen(md) {
-                display: none;
-            }
-        }
-
         display: flex;
         align-items: center;
         justify-content: end;

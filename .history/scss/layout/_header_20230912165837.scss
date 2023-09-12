@@ -31,7 +31,7 @@
             }
             .header-top__body:nth-child(2) {
                 @include screen(sm) {
-                    margin-left: 0;
+                    display: none;
                 }
             }
         }
@@ -318,12 +318,6 @@
         &__body {
             position: relative;
             text-align: center;
-        }
-
-        &__body:nth-child(1) {
-            @include screen(md) {
-                display: none;
-            }
         }
 
         display: flex;

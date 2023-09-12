@@ -1776,6 +1776,11 @@ button {
     display: none;
   }
 }
+@media (max-width: 576.98px) {
+  .header-top__info:nth-child(1) .header-top__body:nth-child(2) {
+    margin-left: 0;
+  }
+}
 .header-top__body:first-child {
   margin-left: 10px;
 }
@@ -2077,6 +2082,11 @@ button {
 .header-buy__body {
   position: relative;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .header-buy__body:nth-child(1) {
+    display: none;
+  }
 }
 .header-buy__icon {
   text-align: center;
@@ -2488,6 +2498,11 @@ button {
   letter-spacing: 0px;
   line-height: 1.2;
   font-family: "Suisse Intl";
+}
+@media (max-width: 576.98px) {
+  .recommend .line-clamp {
+    --line-clamp:1;
+  }
 }
 .recommend__pic {
   padding-top: 20px;

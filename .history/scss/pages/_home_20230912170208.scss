@@ -206,7 +206,7 @@
 
     .line-clamp {
         @include screen(sm) {
-            --line-clamp:1;
+            --line
         }
     }
 
