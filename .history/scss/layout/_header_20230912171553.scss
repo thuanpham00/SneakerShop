@@ -20,23 +20,16 @@
 
         &__info:nth-child(1) {
             .header-top__body:nth-child(3) {
-                @include screen(md) {
-                    display: none;
-                }
                 @include screen(sm) {
                     display: none;
                 }
             }
             .header-top__body:nth-child(1) {
-                @include screen(md) {
-                    margin-left: 0;
-                }
                 @include screen(sm) {
                     display: none;
                 }
             }
             .header-top__body:nth-child(2) {
-                
                 @include screen(sm) {
                     margin-left: 0;
                 }

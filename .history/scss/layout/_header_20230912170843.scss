@@ -20,23 +20,16 @@
 
         &__info:nth-child(1) {
             .header-top__body:nth-child(3) {
-                @include screen(md) {
-                    display: none;
-                }
                 @include screen(sm) {
                     display: none;
                 }
             }
             .header-top__body:nth-child(1) {
-                @include screen(md) {
-                    margin-left: 0;
-                }
                 @include screen(sm) {
                     display: none;
                 }
             }
             .header-top__body:nth-child(2) {
-                
                 @include screen(sm) {
                     margin-left: 0;
                 }
@@ -207,11 +200,6 @@
                     @include screen(lg) {
                         font-size: 1rem
                     }
-
-                    @include screen(sm) {
-                        font-size: 0.8rem;
-                        padding: 5px;
-                    }
                 }
 
                 &.visible {
@@ -219,16 +207,8 @@
                 }
 
                 @include screen(lg) {
-                    top: 3.2rem;
                     left: 0rem;
                     width: 95%;
-                }
-
-                @include screen(sm) {
-                    top: 2.4rem;
-                    left: 0rem;
-                    width: 100%;
-            
                 }
             }
 

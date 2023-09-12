@@ -12,11 +12,11 @@
     animation: fade 2s linear 1;
 
     @include screen(md) {
-        max-width: 270px;
+        width: 270px;
     }
 
     @include screen(sm) {
-        max-width: 240px;
+        width: 2000px;
     }
 
     &__body {

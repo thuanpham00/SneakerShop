@@ -28,9 +28,6 @@
                 }
             }
             .header-top__body:nth-child(1) {
-                @include screen(md) {
-                    margin-left: 0;
-                }
                 @include screen(sm) {
                     display: none;
                 }

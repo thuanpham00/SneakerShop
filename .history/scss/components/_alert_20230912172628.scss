@@ -7,7 +7,7 @@
     background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
-    transform: translateX(150%);
+    // transform: translateX(150%);
     transition: all 0.2s ease-out;
     animation: fade 2s linear 1;
 
@@ -16,7 +16,7 @@
     }
 
     @include screen(sm) {
-        max-width: 240px;
+        max-width: 220px;
     }
 
     &__body {

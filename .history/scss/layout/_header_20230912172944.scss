@@ -28,7 +28,7 @@
                 }
             }
             .header-top__body:nth-child(1) {
-                @include screen(md) {
+                @include screen(sm) {
                     margin-left: 0;
                 }
                 @include screen(sm) {
