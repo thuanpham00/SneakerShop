@@ -437,10 +437,11 @@
     }
 
     .addCart {
+        overflow-y: scroll;
         position: absolute;
         top: 5rem;
         background: red;
         min-width: 300px;
-        height: 320px;
+        max-height: 320px;
     }
 }

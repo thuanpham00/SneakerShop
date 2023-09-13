@@ -340,8 +340,6 @@
     }
 
     &-buy {
-        position: relative;
-
         &__body {
             position: relative;
             text-align: center;
@@ -436,11 +434,8 @@
         }
     }
 
-    .addCart {
-        position: absolute;
-        top: 5rem;
+    .cart {
         background: red;
-        min-width: 300px;
-        height: 320px;
+        
     }
 }

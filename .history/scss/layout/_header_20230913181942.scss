@@ -437,6 +437,7 @@
     }
 
     .addCart {
+        overflow-y: scroll;
         position: absolute;
         top: 5rem;
         background: red;

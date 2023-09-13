@@ -366,6 +366,7 @@ window.addEventListener("load", function () {
                     }
                     numberModal.textContent = textMinus;
                     amountProduct.textContent = textMinus;
+                  
                 } else if (e.target.matches(".modal-quantity__counterRight")) {
                     const text = parseInt(
                         e.target.previousElementSibling.textContent
@@ -373,11 +374,12 @@ window.addEventListener("load", function () {
                     const textPlus = text + 1;
                     numberModal.textContent = textPlus;
                     amountProduct.textContent = textPlus;
+           
                 }
                 const amountProduct1 = parseInt(amountProduct.textContent);
-                const total = document.querySelector(".priceProduct");
-                const totalText = total.textContent;
-                const total1 = parseInt(totalText);
+                const total =
+                    document.querySelector(".priceProduct").textContent;
+                const total1 = parseInt(total);
                 const totalModal = document.querySelector(".priceTotal");
                 const pay = amountProduct1 * total1;
                 totalModal.textContent = pay;
@@ -412,15 +414,12 @@ window.addEventListener("load", function () {
             );
 
             // xử lý add to cart
-            const numberCart = document.querySelector(".number.number--2");
+            const numberCart = document.querySelector("")
             const addToCard = document.querySelector(".cart");
             const popup = document.querySelector(".pop-up");
-            let indexCard = 0
             addToCard.addEventListener("click", function (e) {
                 popup.classList.add("visible");
                 popup.classList.remove("hidden");
-                const upCard = parseInt(numberCart.textContent) + 1;
-                numberCart.textContent = upCard
             });
         })
     );
@@ -436,12 +435,12 @@ window.addEventListener("load", function () {
         } else if (e.target.matches(".pop-up")) {
             popup.classList.remove("visible");
             popup.classList.add("hidden");
-        } else if (e.target.matches(".btn-Popup")) {
+        } else if (e.target.matches(".btn-Popup") ) {
             popup.classList.remove("visible");
             popup.classList.add("hidden");
             // e.target.parentNode.removeChild(e.target);
             const modal = document.querySelector(".modal");
-            modal.parentNode.removeChild(modal);
+            modal.parentNode.removeChild(modal)
         }
     });
 });

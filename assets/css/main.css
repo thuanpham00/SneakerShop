@@ -2113,6 +2113,7 @@ button {
   }
 }
 .header-buy {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -2206,6 +2207,13 @@ button {
   .header-buy .desc {
     font-size: 0.6rem;
   }
+}
+.header .addCart {
+  position: absolute;
+  top: 5rem;
+  background: red;
+  min-width: 300px;
+  height: 320px;
 }
 
 .footer {
@@ -2532,6 +2540,7 @@ button {
   display: block;
 }
 .recommend .recommend__title {
+  height: 34px;
   color: #000;
   margin: 10px 0;
   font-size: 1.4rem;

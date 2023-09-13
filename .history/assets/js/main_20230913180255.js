@@ -412,15 +412,13 @@ window.addEventListener("load", function () {
             );
 
             // xử lý add to cart
-            const numberCart = document.querySelector(".number.number--2");
+            const numberCart = document.querySelector(".number number--2");
             const addToCard = document.querySelector(".cart");
             const popup = document.querySelector(".pop-up");
-            let indexCard = 0
             addToCard.addEventListener("click", function (e) {
                 popup.classList.add("visible");
                 popup.classList.remove("hidden");
-                const upCard = parseInt(numberCart.textContent) + 1;
-                numberCart.textContent = upCard
+                console.log(numberCart);
             });
         })
     );

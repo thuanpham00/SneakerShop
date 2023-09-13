@@ -415,12 +415,11 @@ window.addEventListener("load", function () {
             const numberCart = document.querySelector(".number.number--2");
             const addToCard = document.querySelector(".cart");
             const popup = document.querySelector(".pop-up");
-            let indexCard = 0
+            let indexCard =
             addToCard.addEventListener("click", function (e) {
                 popup.classList.add("visible");
                 popup.classList.remove("hidden");
-                const upCard = parseInt(numberCart.textContent) + 1;
-                numberCart.textContent = upCard
+                console.log(numberCart.textContent);
             });
         })
     );

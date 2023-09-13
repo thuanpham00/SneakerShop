@@ -419,8 +419,9 @@ window.addEventListener("load", function () {
             addToCard.addEventListener("click", function (e) {
                 popup.classList.add("visible");
                 popup.classList.remove("hidden");
-                const upCard = parseInt(numberCart.textContent) + 1;
-                numberCart.textContent = upCard
+                const upCard = parseInt(numberCart.textContent + 1);
+                console.log(upCard);
+                numberCart
             });
         })
     );
