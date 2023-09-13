@@ -59,13 +59,13 @@
     }
 
     &__img {
-        width: 100%;
+        width: 10%;
         height: 120px;
         object-fit: contain;
 
         @include screen(sm) {
-            width: 110%;
-            height: 130px;
+            width: 130%;
+            height: 150px;
         }
     }
 

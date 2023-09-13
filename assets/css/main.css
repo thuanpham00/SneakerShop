@@ -1335,8 +1335,8 @@ button {
 }
 @media (max-width: 575.98px) {
   .modal__img {
-    width: 130%;
-    height: 150px;
+    width: 110%;
+    height: 130px;
   }
 }
 .modal__right {
