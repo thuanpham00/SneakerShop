@@ -403,8 +403,8 @@
                 left: 95%;
             }
 
-            @include screen(sm) {
-                left: 90%;
+            @include screen(md) {
+                left: 95%;
             }
         }
 

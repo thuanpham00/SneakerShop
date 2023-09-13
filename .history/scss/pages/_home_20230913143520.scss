@@ -396,15 +396,11 @@
             }
 
             @include screen(lg) {
-                left: 95%;
+                left: 40remx;
             }
 
             @include screen(md) {
-                left: 95%;
-            }
-
-            @include screen(sm) {
-                left: 90%;
+                left: 200px;
             }
         }
 

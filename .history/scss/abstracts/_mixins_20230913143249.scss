@@ -98,7 +98,7 @@
         }
     }
     @if $devices == sm {
-        @media (max-width: 575.98px) {
+        @media (max-width: 576.98px) {
             @content;
         }
     }
@@ -107,7 +107,7 @@
 // (từ min-width: 992px) = desktop (ko responsive)
 // (max-width: 991.98) = tablet (lg)
 // (max-width: 767.98 ) = mobileBig (md)
-// (max-width: 575.98 ) =  mobileSmall (sm)
+// (max-width: 576.98 ) =  mobileSmall (sm)
 // -> responsive 3 breakpoint lg md sm
 
 // trong grid system thì dùng lg, md, xs 

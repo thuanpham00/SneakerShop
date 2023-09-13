@@ -402,10 +402,6 @@
             @include screen(md) {
                 left: 95%;
             }
-
-            @include screen(sm) {
-                left: 90%;
-            }
         }
 
         > i {
