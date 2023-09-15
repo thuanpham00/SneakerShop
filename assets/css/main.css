@@ -1906,7 +1906,7 @@ button {
   justify-content: space-between;
   column-gap: 20px;
   border-radius: 20px 0px 0px 20px;
-  border: 1px solid red;
+  border: 1px solid #fff;
   padding-left: 20px;
   background: #fff;
 }
@@ -2040,7 +2040,7 @@ button {
   padding: 0 15px;
   width: 295px;
   outline: none;
-  border: 1px solid red;
+  border: 1px solid #f7f2ef;
   height: 100%;
 }
 .header-search__input ::placeholder {
@@ -2209,11 +2209,90 @@ button {
   }
 }
 .header .addCart {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
   position: absolute;
-  top: 5rem;
-  background: red;
+  top: 4.5rem;
+  background: #fff;
   min-width: 300px;
   height: 320px;
+  border-radius: 5px;
+}
+.header .addCart.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}
+.header .addCart__list {
+  border-bottom: 1px solid #eee;
+  margin: 10px 0;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 0 10px;
+}
+.header .addCart__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+.header .addCart__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.header .addCart__img {
+  width: 120px;
+  height: 60px;
+}
+.header .addCart .itemBuy {
+  margin-left: 20px;
+}
+.header .addCart .itemBuy__row {
+  margin-bottom: 5px;
+}
+.header .addCart .itemBuy__row > span {
+  font-size: 1.3rem;
+}
+.header .addCart .itemBuy__money {
+  margin-top: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header .addCart .itemBuy__money > span:nth-child(2) {
+  font-size: 1.7rem;
+}
+.header .addCart__action {
+  margin-top: 20px;
+  display: flex;
+}
+.header .addCart__action .addCart__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 50%;
+  height: 50px;
+  background: red;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+.header .addCart__action .addCart__link:nth-child(2) {
+  column-gap: 5px;
+}
+.header .addCart__action .addCart__link:hover {
+  background: #d62323;
+}
+.header .addCart__action .addCart__link.viewCart {
+  background: #000;
+}
+.header .addCart__action .addCart__link.viewCart:hover {
+  background: #706767;
 }
 
 .footer {
