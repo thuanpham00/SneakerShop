@@ -424,7 +424,7 @@ window.addEventListener("load", function () {
                 const upCard = parseInt(numberCart.textContent) + 1;
                 numberCart.textContent = upCard;
                 const amountItem = document.querySelector(".itemBuy__number")
-                amountItem.textContent = upCard;
+                amountItem.textContent = upCard
                 // xử lý add product vào Cart(header)
                 // xử lý ảnh Cart
                 const getImg = document.querySelector(".modal__img");
