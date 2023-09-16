@@ -1,0 +1,15 @@
+@import "../abstracts";
+
+.slick-arrow {
+    border-radius: 99px;
+    background: red;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

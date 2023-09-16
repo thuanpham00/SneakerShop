@@ -1750,6 +1750,51 @@ button {
   pointer-events: none;
 }
 
+.slick-arrow {
+  border-radius: 99px;
+  background: #dadada;
+  color: #333;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.25s linear;
+}
+
+.slick-arrow:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 30px);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 99px;
+  background: #eee;
+  border: none;
+  outline: none;
+}
+
+.slick-dots .slick-active button {
+  background: #006340;
+}
+
 .container {
   max-width: 1170px;
 }
@@ -2694,52 +2739,10 @@ button {
   width: 100%;
   object-fit: contain;
 }
-.banner__btn {
-  display: block;
-  border-radius: 99px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  left: 20px;
-  transition: all 0.5s ease;
-}
-.banner__btn:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
-.banner__btn > * {
-  pointer-events: none;
-}
-.banner__btn i {
-  font-size: 1rem;
-  color: #eee;
-}
-@media (max-width: 575.98px) {
-  .banner__btn i {
-    font-size: 0.8rem;
-  }
-}
-.banner__btn:last-child {
-  left: 93%;
-}
-@media (max-width: 991.98px) {
-  .banner__btn:last-child {
-    left: 93%;
-  }
-}
-@media (max-width: 575.98px) {
-  .banner__btn {
-    width: 20px;
-    height: 20px;
-    left: 1%;
-  }
-}
 
+.recommend {
+  margin-top: 30px;
+}
 .recommend__info {
   display: flex;
   align-items: center;
@@ -2941,6 +2944,7 @@ button {
   margin-top: 20px;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -2957,63 +2961,6 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-}
-.seen-ins__btn {
-  position: absolute;
-  display: block;
-  border-radius: 99px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: none;
-  height: 40px;
-  width: 40px;
-  background: #000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-}
-.seen-ins__btn:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.seen-ins__btn.left {
-  left: -20px;
-}
-.seen-ins__btn.left.visible {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.2s ease;
-}
-.seen-ins__btn.right {
-  left: 1120px;
-}
-.seen-ins__btn.right.visible {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.2s ease;
-}
-@media (max-width: 991.98px) {
-  .seen-ins__btn.right {
-    left: 95%;
-  }
-}
-@media (max-width: 767.98px) {
-  .seen-ins__btn.right {
-    left: 95%;
-  }
-}
-@media (max-width: 575.98px) {
-  .seen-ins__btn.right {
-    left: 90%;
-  }
-}
-.seen-ins__btn > i {
-  color: #fff;
-  font-size: 1.5rem;
-}
-.seen-ins__btn > * {
-  pointer-events: none;
 }
 
 .visible {
@@ -3037,6 +2984,7 @@ button {
 }
 
 .name-brand {
+  margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .name-brand__inner {
