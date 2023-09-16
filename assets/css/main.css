@@ -2261,10 +2261,17 @@ button {
   font-weight: 500;
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 .header .addCart .itemBuy__money > span:nth-child(2) {
   font-size: 1.7rem;
+}
+.header .addCart__amount {
+  display: flex;
+  align-items: center;
+}
+.header .addCart__amountRight {
+  margin-left: 10px;
 }
 .header .addCart__action {
   margin-top: 20px;
