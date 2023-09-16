@@ -1,0 +1,184 @@
+@import "../abstracts";
+.addCart {
+    @include screen(lg) {
+        top: 5.8rem;
+    }
+
+    @include screen(md) {
+        top: 4rem;
+        min-width: 250px;
+        height: 300px;
+    }
+
+    @include screen(sm) {
+        top: 4rem;
+        width: 150px;
+        height: 250px;
+    }
+
+    @include hidden;
+    position: absolute;
+    top: 4.5rem;
+    background: #fff;
+    min-width: 300px;
+    height: 320px;
+    border-radius: 5px;
+    z-index: 2;
+
+    &.visible {
+        @include visible;
+    }
+
+    &__list {
+        border-bottom: 1px solid #eee;
+        margin: 10px 0;
+        height: 200px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        padding: 0 10px;
+
+        @include screen(sm) {
+            height: 150px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+
+        @include screen(md) {
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+
+        @include screen(sm) {
+            font-size: 1rem;
+            line-height: 1;
+        }
+    }
+
+    &__img {
+        width: 120px;
+        height: 60px;
+
+        @include screen(sm) {
+            width: 80px;
+            height: 40px;
+        }
+    }
+
+    .itemBuy {
+        margin-left: 20px;
+
+        &__row {
+            margin-bottom: 5px;
+
+            > span {
+                font-size: 1.3rem;
+            }
+        }
+
+        &__money {
+            margin-top: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            > span:nth-child(2) {
+                font-size: 1.7rem;
+
+                @include screen(md) {
+                    font-size: 1.5rem;
+                }
+
+                @include screen(sm) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            > span {
+                @include screen(md) {
+                    font-size: 1.2rem;
+                }
+
+                @include screen(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            @include screen(md) {
+                margin-top: 5px;
+                column-gap: 5px;
+            }
+        }
+    }
+
+    &__amount {
+        display: flex;
+        align-items: center;
+
+        &Right {
+            margin-left: 10px;
+        }
+
+        @include screen(sm) {
+            margin-top: 5px;
+            font-size: 1rem;
+        }
+    }
+
+    &__action {
+        margin-top: 20px;
+        display: flex;
+
+        @include screen(md) {
+            margin-top: 5px;
+        }
+
+        .addCart__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            width: 50%;
+            height: 50px;
+            background: red;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: all 0.25s ease;
+
+            @include screen(md) {
+                height: 40px;
+            }
+
+            @include screen(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .addCart__link:nth-child(2) {
+            column-gap: 5px;
+        }
+
+        .addCart__link:hover {
+            background: #d62323;
+        }
+
+        .addCart__link.viewCart {
+            background: #000;
+
+            &:hover {
+                background: #706767;
+            }
+        }
+    }
+}
