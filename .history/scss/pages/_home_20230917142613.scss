@@ -491,10 +491,6 @@
             padding-left: 10px;
             color: #000;
         }
-        @include screen(sm) {
-            margin-top: 0;
-            padding: 10px 0;
-        }
     }
 
     &__img {
@@ -502,7 +498,7 @@
         height: 200px;
 
         @include screen(sm) {
-            height: 130px;
+            height: 200px;
         }
     }
 }
