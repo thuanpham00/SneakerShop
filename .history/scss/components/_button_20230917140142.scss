@@ -28,6 +28,7 @@
 
     @include screen(lg) {
         padding: 5px 10px;
+        line-height: 1.2;
     }
 
     @include screen(md) {

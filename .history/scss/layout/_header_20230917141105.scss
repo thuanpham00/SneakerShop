@@ -641,11 +641,11 @@
         background: #f6f6f6;
         z-index: 4;
         padding: 20px;
-        transform: translateX(-120%);
-        transition: all 0.2s ease;
+        transform: translateX(-100%);
+        // @include hidden;
 
         &.visible {
-            transform: translateX(0%);
+            @include visible;
         }
 
         .nav-list__item:first-child {

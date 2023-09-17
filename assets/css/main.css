@@ -1178,7 +1178,7 @@ button {
 }
 @media (max-width: 991.98px) {
   .button-login {
-    padding: 5px 22px;
+    padding: 5px 10px;
   }
 }
 @media (max-width: 767.98px) {
@@ -2454,17 +2454,14 @@ button {
 .mobile-header__menu {
   position: fixed;
   inset: 0 40% 0 0;
-  background: #fff;
+  background: #f6f6f6;
   z-index: 4;
   padding: 20px;
-  opacity: 0;
-  visibility: hidden;
+  transform: translateX(-120%);
   transition: all 0.2s ease;
 }
 .mobile-header__menu.visible {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.2s ease;
+  transform: translateX(0%);
 }
 .mobile-header__menu .nav-list__item:first-child {
   padding: 20px 7px;
