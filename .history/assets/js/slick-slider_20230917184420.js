@@ -21,7 +21,7 @@ $(document).ready(function () {
         centerMode: true,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         prevArrow:
             "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:
