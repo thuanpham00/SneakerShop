@@ -131,36 +131,36 @@ window.addEventListener("load", function () {
     // });
 
     // banner
-    // var img_2 = [
-    //     "assets/img/banner-2/1.webp",
-    //     "assets/img/banner-2/2.webp",
-    //     "assets/img/banner-2/3.webp",
-    //     "assets/img/banner-2/4.webp",
-    //     "assets/img/banner-2/5.webp",
-    // ];
-    // let index2 = 0;
-    // const picture_2 = document.querySelector(".banner__picture.banner-2");
-    // const buttonLeft_2 = document.querySelector(".left.banner-2");
-    // const buttonRight_2 = document.querySelector(".right.banner-2");
-    // buttonLeft_2.addEventListener("click", function (e) {
-    //     index2 = (index2 - 1 + img_2.length) % img_2.length;
-    //     picture_2.src = img_2[index2];
-    // });
-    // buttonRight_2.addEventListener("click", function (e) {
-    //     index2 = (index2 + 1 + img_2.length) % img_2.length;
-    //     picture_2.src = img_2[index2];
-    // });
-    // let lastTitle2;
-    // const random2 = setInterval(function () {
-    //     const randomPic2 = img_2[Math.floor(Math.random() * img_2.length)];
-    //     if (randomPic2 != lastTitle2) {
-    //         picture_2.src = randomPic2;
-    //     } // đầu tiên randomPic lần thứ 1
-    //     // sau đó randomPic lần thứ 2 kiểm tra nếu
-    //     // randomPic != lastTitle thì thay đổi src
-    //     // còn nếu giống nhau thì bỏ qua
-    //     lastTitle2 = randomPic2;
-    // }, 5000);
+    var img_2 = [
+        "assets/img/banner-2/1.webp",
+        "assets/img/banner-2/2.webp",
+        "assets/img/banner-2/3.webp",
+        "assets/img/banner-2/4.webp",
+        "assets/img/banner-2/5.webp",
+    ];
+    let index2 = 0;
+    const picture_2 = document.querySelector(".banner__picture.banner-2");
+    const buttonLeft_2 = document.querySelector(".left.banner-2");
+    const buttonRight_2 = document.querySelector(".right.banner-2");
+    buttonLeft_2.addEventListener("click", function (e) {
+        index2 = (index2 - 1 + img_2.length) % img_2.length;
+        picture_2.src = img_2[index2];
+    });
+    buttonRight_2.addEventListener("click", function (e) {
+        index2 = (index2 + 1 + img_2.length) % img_2.length;
+        picture_2.src = img_2[index2];
+    });
+    let lastTitle2;
+    const random2 = setInterval(function () {
+        const randomPic2 = img_2[Math.floor(Math.random() * img_2.length)];
+        if (randomPic2 != lastTitle2) {
+            picture_2.src = randomPic2;
+        } // đầu tiên randomPic lần thứ 1
+        // sau đó randomPic lần thứ 2 kiểm tra nếu
+        // randomPic != lastTitle thì thay đổi src
+        // còn nếu giống nhau thì bỏ qua
+        lastTitle2 = randomPic2;
+    }, 5000);
 
     // alert
     function createAlert() {
@@ -553,3 +553,41 @@ window.addEventListener(
         }
     }, 100)
 );
+
+$(document).ready(function () {
+    $(".banner__thumb").slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        arrows: true,
+        draggable: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow:
+            "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:
+            "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        dots: true,
+    });
+    $(".seen-ins__list").slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow:
+            "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:
+            "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    });
+});
+
+// slidesToShow : 3 (số lượng phần tử hiển thị 1 lần) ví dụ 1 lần hiện 3 cái
+// slidesToScroll: 2 (bấm 1 lần dịch chuyển qua mấy cái)
+// infinite: true (chạy vô tận)
+// arrows: false (mất button)
+// autoplay: true,
+// autoplaySpeed: 2000, kết hợp 2 cái lại tự chạy sau 1 khoảng thời gian
+// draggable: false, tắt chức năng scroll hình bằng chuột
+// dots: dấu chấm

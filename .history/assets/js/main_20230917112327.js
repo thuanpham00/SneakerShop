@@ -131,36 +131,36 @@ window.addEventListener("load", function () {
     // });
 
     // banner
-    // var img_2 = [
-    //     "assets/img/banner-2/1.webp",
-    //     "assets/img/banner-2/2.webp",
-    //     "assets/img/banner-2/3.webp",
-    //     "assets/img/banner-2/4.webp",
-    //     "assets/img/banner-2/5.webp",
-    // ];
-    // let index2 = 0;
-    // const picture_2 = document.querySelector(".banner__picture.banner-2");
-    // const buttonLeft_2 = document.querySelector(".left.banner-2");
-    // const buttonRight_2 = document.querySelector(".right.banner-2");
-    // buttonLeft_2.addEventListener("click", function (e) {
-    //     index2 = (index2 - 1 + img_2.length) % img_2.length;
-    //     picture_2.src = img_2[index2];
-    // });
-    // buttonRight_2.addEventListener("click", function (e) {
-    //     index2 = (index2 + 1 + img_2.length) % img_2.length;
-    //     picture_2.src = img_2[index2];
-    // });
-    // let lastTitle2;
-    // const random2 = setInterval(function () {
-    //     const randomPic2 = img_2[Math.floor(Math.random() * img_2.length)];
-    //     if (randomPic2 != lastTitle2) {
-    //         picture_2.src = randomPic2;
-    //     } // đầu tiên randomPic lần thứ 1
-    //     // sau đó randomPic lần thứ 2 kiểm tra nếu
-    //     // randomPic != lastTitle thì thay đổi src
-    //     // còn nếu giống nhau thì bỏ qua
-    //     lastTitle2 = randomPic2;
-    // }, 5000);
+    var img_2 = [
+        "assets/img/banner-2/1.webp",
+        "assets/img/banner-2/2.webp",
+        "assets/img/banner-2/3.webp",
+        "assets/img/banner-2/4.webp",
+        "assets/img/banner-2/5.webp",
+    ];
+    let index2 = 0;
+    const picture_2 = document.querySelector(".banner__picture.banner-2");
+    const buttonLeft_2 = document.querySelector(".left.banner-2");
+    const buttonRight_2 = document.querySelector(".right.banner-2");
+    buttonLeft_2.addEventListener("click", function (e) {
+        index2 = (index2 - 1 + img_2.length) % img_2.length;
+        picture_2.src = img_2[index2];
+    });
+    buttonRight_2.addEventListener("click", function (e) {
+        index2 = (index2 + 1 + img_2.length) % img_2.length;
+        picture_2.src = img_2[index2];
+    });
+    let lastTitle2;
+    const random2 = setInterval(function () {
+        const randomPic2 = img_2[Math.floor(Math.random() * img_2.length)];
+        if (randomPic2 != lastTitle2) {
+            picture_2.src = randomPic2;
+        } // đầu tiên randomPic lần thứ 1
+        // sau đó randomPic lần thứ 2 kiểm tra nếu
+        // randomPic != lastTitle thì thay đổi src
+        // còn nếu giống nhau thì bỏ qua
+        lastTitle2 = randomPic2;
+    }, 5000);
 
     // alert
     function createAlert() {

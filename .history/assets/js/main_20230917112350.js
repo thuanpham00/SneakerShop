@@ -131,13 +131,13 @@ window.addEventListener("load", function () {
     // });
 
     // banner
-    // var img_2 = [
-    //     "assets/img/banner-2/1.webp",
-    //     "assets/img/banner-2/2.webp",
-    //     "assets/img/banner-2/3.webp",
-    //     "assets/img/banner-2/4.webp",
-    //     "assets/img/banner-2/5.webp",
-    // ];
+    var img_2 = [
+        "assets/img/banner-2/1.webp",
+        "assets/img/banner-2/2.webp",
+        "assets/img/banner-2/3.webp",
+        "assets/img/banner-2/4.webp",
+        "assets/img/banner-2/5.webp",
+    ];
     // let index2 = 0;
     // const picture_2 = document.querySelector(".banner__picture.banner-2");
     // const buttonLeft_2 = document.querySelector(".left.banner-2");
