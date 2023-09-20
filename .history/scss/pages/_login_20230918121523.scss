@@ -1,0 +1,13 @@
+@import "../abstracts";
+.header-login {
+    @include sticky;
+    background: #1e1f29;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    ma
+    min-width: 400px;
+}

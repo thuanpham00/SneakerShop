@@ -1,0 +1,62 @@
+@import "../abstracts";
+.header-login {
+    @include sticky;
+    background: #1e1f29;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    margin: 20px auto 0;
+    max-width: 400px;
+    height: 600px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    padding: 20px;
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+    }
+
+    &-body {
+        margin-top: 30px;
+    }
+
+    &__link {
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000;
+    }
+
+    &-control {
+        position: relative;
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        input:focus + label {
+            transform: translateY(1px);
+            background: #fff;
+            text-shadow: -0.1px -0.1px currentColor, 0.1px 0.1px currentColor;
+        }
+
+        label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.2s linear;
+        }
+    }
+}
