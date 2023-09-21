@@ -95,11 +95,8 @@ window.addEventListener("load", function () {
     const password2 = document.getElementById("password2");
     const form2 = document.querySelector(".form-body.form-2")
     form2.addEventListener("submit", function(e) {
-        e.preventDefault();
-        if(!checkRequired([email2, password2])) {
-            checkEmail(email2);
-            checkPassWord(password2)
-        }
+        e.target.preventDefault();
+        if(!checkRequired({}))
     })
 
     const formLogin = document.querySelector(".form__link.form__login");

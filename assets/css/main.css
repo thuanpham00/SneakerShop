@@ -3184,14 +3184,10 @@ button {
   position: absolute;
   width: 185px;
   top: 34px;
-  left: 0;
+  right: 0;
   height: 2px;
   background: red;
   transition: all 0.2s linear;
-}
-.form .line.line-2 {
-  right: 0;
-  left: initial;
 }
 .form-control {
   position: relative;

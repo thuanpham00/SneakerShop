@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
         if(regexPass.test(input.value)) {
             showSuccess(input);
         } else {
-            showError(input, `${getFieldName(input)} is least 8 characters, 1 uppercase letter, 1 number & 1 symbol`)
+            showError(input, `${getFieldName(input)} At least 8 characters, 1 uppercase letter, 1 number & 1 symbol`)
         }
     }
 
@@ -90,18 +90,6 @@ window.addEventListener("load", function () {
         }
     });
 
-    // xử lý login
-    const email2 = document.getElementById("email2");
-    const password2 = document.getElementById("password2");
-    const form2 = document.querySelector(".form-body.form-2")
-    form2.addEventListener("submit", function(e) {
-        e.preventDefault();
-        if(!checkRequired([email2, password2])) {
-            checkEmail(email2);
-            checkPassWord(password2)
-        }
-    })
-
     const formLogin = document.querySelector(".form__link.form__login");
     formLogin.addEventListener("click", function (e) {
         const remove = e.target.parentNode.nextElementSibling
@@ -114,7 +102,7 @@ window.addEventListener("load", function () {
         const {width, height, top, left} = cords;
         line.style.width = `${width*4.27}px`
         line.style.top = `${top - height - 63}px`
-        line.style.transform = `translateX(0%)`
+        line.style.transform = `translateX(100%)`
         // remove line form sign up
         const linee = e.target.parentNode.querySelector(".line");
         linee.parentNode.removeChild(linee)
@@ -131,7 +119,7 @@ window.addEventListener("load", function () {
         const {width, height, top, left} = cords;
         line.style.width = `${width*3.5}px`
         line.style.top = `${top - height - 63}px`
-        line.style.transform = `translateX(-93%)`
+        line.style.transform = `translateX(0%)`
 
         // remove line form login
         const lineee = e.target.nextElementSibling.querySelector(".line");

@@ -53,7 +53,6 @@
         font-weight: 600;
         color: #000;
     }
-    
     .line {
         position: absolute;
         width: 185px;
@@ -62,6 +61,11 @@
         height: 2px;
         background: red;
         transition: all 0.2s linear;
+
+        // &.line-2 {
+        //     left: 0;
+        //     right: initial; // bỏ left mặc định
+        // }
     }
 
     &-control {
