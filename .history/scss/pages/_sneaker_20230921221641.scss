@@ -1,0 +1,47 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1170px;
+}
+
+.sneaker {
+    &-head {
+        max-width: 1248px;
+        margin: 20px auto 0;
+    }
+    
+    &-body {
+        border-radius: 5px;
+        height: 140px;
+        background: #f4f3f1;
+        padding: 25px;
+
+        &__heading {
+            @include heading-h2
+        }
+
+        &__desc {
+            margin-top: 10px;
+            padding-right: 230px;
+            @include desc
+        }
+    }
+
+    &-content {
+        margin-top: 50px;
+
+        .sneaker-page {
+            display: flex;
+        }
+
+        .sneaker-sidebar {
+            width: 20%;
+            background: yellow;
+        }
+
+        .sneaker-wrapper {
+            width: 70%;
+            background: red;
+        }
+    }
+}

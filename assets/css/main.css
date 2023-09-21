@@ -1795,6 +1795,75 @@ button {
   background: #006340;
 }
 
+.sneaker-list {
+  margin-top: 10px;
+}
+.sneaker__item {
+  padding: 20px;
+  position: relative;
+  max-height: 180px;
+  border: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+@media (max-width: 991.98px) {
+  .sneaker__item {
+    padding: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .sneaker__item {
+    max-height: 300px;
+  }
+}
+.sneaker__item:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sneaker__item > * {
+  pointer-events: none;
+}
+.sneaker__pic {
+  width: 80%;
+  object-fit: contain;
+}
+.sneaker__icon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+.sneaker__icon > i {
+  color: #000;
+  font-size: 1.5rem;
+}
+.sneaker__title {
+  height: 34px;
+  color: #000;
+  margin: 10px 0;
+  font-size: 1.4rem;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-family: "Suisse Intl";
+}
+.sneaker__desc {
+  color: #000;
+  margin: 10px 0 10px;
+  font-size: 1.2rem;
+}
+.sneaker-row {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.sneaker__usd, .sneaker__buy {
+  color: #000;
+  display: block;
+  font-family: "Suisse Intl";
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
 .container {
   max-width: 1170px;
 }
@@ -3128,6 +3197,136 @@ button {
 
 .container {
   max-width: 1170px;
+}
+
+.sneaker-head {
+  max-width: 1300px;
+  margin: 20px auto 0;
+}
+.sneaker-body {
+  border-radius: 5px;
+  min-height: 140px;
+  background: #f4f3f1;
+  padding: 30px 50px;
+}
+.sneaker-body__heading {
+  font-size: 3.2rem;
+  font-family: Suisse Intl;
+  letter-spacing: 1px;
+}
+.sneaker-body__desc {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+}
+.sneaker-content {
+  margin-top: 50px;
+}
+.sneaker-content .sneaker-page {
+  display: flex;
+  column-gap: 10px;
+}
+.sneaker-content .sneaker-sidebar {
+  width: 20%;
+}
+@media (max-width: 575.98px) {
+  .sneaker-content .sneaker-sidebar {
+    display: none;
+  }
+}
+.sneaker-content .sneaker-sidebar .sneaker-column {
+  margin-bottom: 30px;
+}
+.sneaker-content .sneaker-sidebar .sneaker-column .title {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: Suisse Intl;
+  letter-spacing: 0px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  cursor: default;
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .sneaker-content .sneaker-sidebar .sneaker-column .title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .sneaker-content .sneaker-sidebar .sneaker-column .title {
+    font-size: 1.2rem;
+  }
+}
+.sneaker-content .sneaker-wrapper {
+  width: 80%;
+}
+@media (max-width: 575.98px) {
+  .sneaker-content .sneaker-wrapper {
+    width: 100%;
+  }
+}
+.sneaker-content .sneaker-wrapper__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sneaker-content .sneaker-wrapper__row .left {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.sneaker-content .sneaker-wrapper__row .left a {
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  color: #000;
+  font-size: 1.2rem;
+}
+.sneaker-content .sneaker-wrapper__row .right {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 1.5rem;
+}
+.sneaker-content .sneaker-wrapper__row .right .content {
+  font-weight: 500;
+}
+.sneaker-content .sneaker-wrapper__row .right i {
+  font-size: 1rem;
+}
+.sneaker-content .sneaker-wrapper__row .right > * {
+  pointer-events: none;
+}
+.sneaker-content .sneaker-wrapper__btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.sneaker-content .sneaker-wrapper__btn .link-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.sneaker-content .sneaker-wrapper__btn .link-number.active {
+  background: #006340;
+  color: #fff;
+}
+
+.special {
+  color: #006340 !important;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .header-login {

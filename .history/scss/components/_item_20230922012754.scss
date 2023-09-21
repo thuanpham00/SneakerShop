@@ -1,0 +1,77 @@
+@import "../abstracts";
+
+.sneaker {
+    &-list {
+        margin-top: 10px;
+        column-gap: 10px;
+    }
+
+    &__item {
+        width: 19%;
+        padding: 20px;
+        position: relative;
+        max-height: 180px;
+        border: 1px solid #eee;
+        transition: all 0.2s ease;
+
+        @
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        > * {
+            pointer-events: none;
+        }
+    }
+
+    &__pic {
+        width: 80%;
+        object-fit: contain;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        cursor: pointer;
+
+        > i {
+            color: #000;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__title {
+        height: 34px;
+        color: #000;
+        margin: 10px 0;
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        @include font-suisseIntl;
+    }
+
+    &__desc {
+        color: #000;
+        margin: 10px 0 10px;
+        font-size: 1.2rem;
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    &__usd,
+    &__buy {
+        color: #000;
+        display: block;
+        @include font-suisseIntl;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop Sneaker, Shoes, Accessories etc...</title>
+        <!-- font Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="114x114"
+            href="/apple-icon-114x114.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="120x120"
+            href="/apple-icon-120x120.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="144x144"
+            href="/apple-icon-144x144.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="152x152"
+            href="/apple-icon-152x152.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- style slick slider -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- link tái sử dụng header footer-->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header"></header>
+        <script>
+            load("header", "./template/header.html");
+        </script>
+
+        <main>
+            <!-- nav-list -->
+            <section class="nav">
+                <div class="container">
+                    <ul id="navPC" class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a
+                                href="./sneaker.html"
+                                class="nav-list__link active"
+                                >Sneaker</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Shoes</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Clothes</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Trading Cards</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Accessories</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link"
+                                >Trending Deals</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- header mobile -->
+            <header class="mobile-header">
+                <div class="mobile-header__icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobile-header__overlay"></div>
+                <div class="mobile-header__menu">
+                    <div class="name">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo_admin/1.jpg"
+                                alt="Meecats"
+                                class="picture"
+                            />
+                        </a>
+                        <span class="name__thuan">Pham Thuan</span>
+                    </div>
+
+                    <ul id="navMobile"></ul>
+
+                    <script>
+                        const pcNav = document.querySelector("#navPC");
+                        const mobileNav = document.querySelector("#navMobile");
+
+                        mobileNav.innerHTML = pcNav.innerHTML;
+                    </script>
+                </div>
+            </header>
+
+            <section class="sneaker-head">
+                <div class="sneaker-body">
+                    <h2 class="sneaker-body__heading">Sneakers</h2>
+                    <p class="sneaker-body__desc">
+                        Every sneaker you want is always available and verified
+                        by StockX. Buy and sell new sneakers & shoes from Air
+                        Jordan, adidas, Nike, Yeezy and more!
+                    </p>
+                </div>
+            </section>
+
+            <section class="sneaker-content">
+                <div class="container">
+                    <div class="sneaker-page">
+                        <div class="sneaker-sidebar">
+                            <div class="sneaker-column">
+                                <a href="#!" class="title special">SNEAKER</a>
+                                <a href="#!" class="title">SHOES</a>
+                                <a href="#!" class="title">APPAREL</a>
+                                <a href="#!" class="title">ELECTRONICS</a>
+                                <a href="#!" class="title">TRADING CARDS</a>
+                                <a href="#!" class="title">COLLECTIBLES</a>
+                                <a href="#!" class="title">ACCESSORIES</a>
+                            </div>
+                            <div class="sneaker-column">
+                                <a href="#!" class="title">TRADING DEALS</a>
+                                <a href="#!" class="title">BELOW RETAIL</a>
+                            </div>
+                            <div class="sneaker-column">
+                                <a href="#!" class="title">ADIDAS</a>
+                                <a href="#!" class="title">AIR JORDAN</a>
+                                <a href="#!" class="title">ASICS</a>
+                                <a href="#!" class="title">NEW BALANCE</a>
+                                <a href="#!" class="title">NIKE</a>
+                                <a href="#!" class="title">PUMA</a>
+                                <a href="#!" class="title">REEBOK</a>
+                                <a href="#!" class="title">VANS</a>
+                                <a href="#!" class="title">YEEZY</a>
+                                <a href="#!" class="title">LUXURY BRANDS</a>
+                                <a href="#!" class="title">OTHER BRANDS</a>
+                                <a href="#!" class="title">COLLECTIONS</a>
+                            </div>
+                        </div>
+                        <div class="sneaker-wrapper">
+                            <div class="sneaker-wrapper__row">
+                                <div class="left">
+                                    <a href="./index.html">Home </a>
+                                    <span>/</span>
+                                    <a href="./sneaker.html" class="special"
+                                        >Sneakers
+                                    </a>
+                                </div>
+                                <div class="right">
+                                    <div class="content">Sort By:</div>
+                                    <span>Featured</span>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-lg-5 gy-lg-2 sneaker-list">
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/27.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 4 Retro Red Cement
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >194
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/2.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Crocs Classic Clog DreamWorks Shrek
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >55
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/3.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            UGG Tazz Slipper Mustard Seed (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >140
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/4.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Boost 350 V2 Bone
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >184
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/5.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 3 Retro SP J Balvin Medellín Sunset
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >334
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/6.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike NOCTA Glide Drake Black
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >141
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/7.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Retro White Black Panda (2021)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >91
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/8.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Slide Slate Grey
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >66
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/9.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Photon Dust (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >75
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/10.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Grey Fog
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >102
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/11.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Campus 00s Core Black
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >60
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/12.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Slide Onyx (2022/2023)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >89
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/13.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Samba OG Cloud White Core Black
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >82
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/14.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Crocs Classic Clog Lightning McQueen
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >60
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/15.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Retro White Black Panda (2021) (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >89
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/16.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High OG Palomino
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >155
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/17.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Air Force 1 Low '07 White
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >72
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/18.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 4 Retro Frozen Moments (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >213
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/19.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Slide Bone (2022/2023 Restock)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >105
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/home/sneaker-2/13.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High Off-White
+                                            Chicago
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >4414
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/21.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Cacao Wow (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >95
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/22.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low SP St. John's (2020/2023)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >91
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/23.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Slide Slate Marine
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >68
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/24.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Campus 00s Grey White
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >61
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/25.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Foam RNR Carbon
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >96
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/26.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Medium Curry
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >104
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/27.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 4 Retro Red Cement (GS)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >103
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/28.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High OG UNC Toe
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >149
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/30.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High OG SP Union LA Bephies Beauty Supply Summer of ‘96
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >169
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/29.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Slide Granite
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >65
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/31.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 4 Retro Thunder (2023)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >216
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/32.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            adidas Yeezy Boost 350 V2 Onyx (2022/2023)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >228
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/33.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High OG Spider-Man Across the Spider-Verse
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >151
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/34.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High OG Lucky Green
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >90
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/35.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Air Force 1 Low QS Terror Squad Blackout
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >136
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/36.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Rose Whisper (Women's)
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >89
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/37.png"
+                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Nike Dunk Low Retro White Pure Platinum
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >51
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/38.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 3 Retro Palomino
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >147
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/39.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High Off-White
+                                            Chicago
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >4414
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sneaker__item">
+                                    <a href="#!" class="sneaker__link"
+                                        ><img
+                                            src="./assets/img/page_sneaker/40.png"                                            alt="Sneaker"
+                                            class="sneaker__pic"
+                                        />
+                                        <div class="sneaker__icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <h3 class="sneaker__title line-clamp">
+                                            Jordan 1 Retro High Off-White
+                                            Chicago
+                                        </h3>
+                                        <p class="sneaker__desc">
+                                            Lowest Ask
+                                        </p>
+                                        <div class="sneaker-row">
+                                            <span class="sneaker__buy"
+                                                >4414
+                                            </span>
+                                            <div class="sneaker__usd">$</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sneaker-wrapper__btn">
+                                <a href="#!" class="link-number"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pop-up -->
+            <div class="pop-up hidden">
+                <div class="pop-up__body">
+                    <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Success!</span>
+                    <p class="desc">
+                        You have successfully added the product to your cart and
+                        proceed to checkout
+                    </p>
+                    <button class="btn btn-Popup">
+                        <a href="#!">Continue</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("footer", "./template/footer.html");
+        </script>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="./assets/js/main_sneaker.js"></script>
+        <script src="./assets/js/slick-slider.js"></script>
+    </body>
+</html>

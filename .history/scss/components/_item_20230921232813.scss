@@ -1,0 +1,17 @@
+@import "../abstracts";
+
+.sneaker {
+    &__item {
+        position: relative;
+        height: 240px;
+        border: 1px solid #eee;
+        transition: all 0.2s ease;
+        transform: scale(1);
+    }
+
+    &__pic {
+        width: 100%;
+    }
+
+    
+}

@@ -1,0 +1,39 @@
+@import "../abstracts";
+
+.sneaker {
+    &__item {
+        padding: 20px;
+        position: relative;
+        height: 240px;
+        border: 1px solid #eee;
+        transition: all 0.2s ease;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        > * {
+            pointer-events: none;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        cursor: pointer;
+
+        > i {
+            color: #000;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__pic {
+        width: 100%;
+    }
+}
