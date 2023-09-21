@@ -6,14 +6,18 @@
     }
 
     &__item {
-        padding: 13px 15px;
+        padding: 20px 20px 10px;
         position: relative;
-        min-height: 120px;
+        min-height: 180px;
         border: 1px solid #eee;
         transition: all 0.2s ease;
 
         @include screen(lg) {
             padding: 10px;
+        }
+
+        @include screen(sm) {
+            max-height: 300px;
         }
 
         &:hover {
@@ -67,10 +71,11 @@
 
     &__usd,
     &__buy {
-        @include font-suisseIntl;
         color: #000;
         display: block;
+        @include font-suisseIntl;
         font-size: 1.5rem;
+        margin-bottom: 20px;
         font-weight: 700;
     }
 }

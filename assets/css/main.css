@@ -1799,20 +1799,15 @@ button {
   margin-top: 10px;
 }
 .sneaker__item {
-  padding: 20px;
+  padding: 13px 15px;
   position: relative;
-  max-height: 180px;
+  min-height: 120px;
   border: 1px solid #eee;
   transition: all 0.2s ease;
 }
 @media (max-width: 991.98px) {
   .sneaker__item {
     padding: 10px;
-  }
-}
-@media (max-width: 575.98px) {
-  .sneaker__item {
-    max-height: 300px;
   }
 }
 .sneaker__item:hover {
@@ -1856,11 +1851,10 @@ button {
   column-gap: 5px;
 }
 .sneaker__usd, .sneaker__buy {
+  font-family: "Suisse Intl";
   color: #000;
   display: block;
-  font-family: "Suisse Intl";
   font-size: 1.5rem;
-  margin-bottom: 20px;
   font-weight: 700;
 }
 
