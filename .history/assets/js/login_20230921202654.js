@@ -93,6 +93,7 @@ window.addEventListener("load", function () {
         const {width, height, top, left} = cords;
         line.style.width = `${width*4.3}px`
         line.style.top = `${top - height - 64}px`
+        // line.style.left = `${left - 650}px`
         line.style.transform = `translateX(100%)`
         // remove line form sign up
         const linee = e.target.parentNode.querySelector(".line");
@@ -110,7 +111,7 @@ window.addEventListener("load", function () {
         const {width, height, top, left} = cords;
         line.style.width = `${width*3.5}px`
         line.style.top = `${top - height - 64}px`
-        line.style.transform = `translateX(0%)`
+        line.style.transform = `translateX(100%)`
 
         // remove line form login
         const lineee = e.target.nextElementSibling.querySelector(".line");
