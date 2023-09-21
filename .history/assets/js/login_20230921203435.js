@@ -109,7 +109,7 @@ window.addEventListener("load", function () {
         const cords = e.target.getBoundingClientRect()
         const {width, height, top, left} = cords;
         line.style.width = `${width*3.5}px`
-        line.style.top = `${top - height - 63}px`
+        line.style.top = `${top - height - 64}px`
         line.style.transform = `translateX(0%)`
 
         // remove line form login
