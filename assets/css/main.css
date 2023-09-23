@@ -2499,6 +2499,44 @@ button {
 .header .addCart__action .addCart__link.viewCart:hover {
   background: #706767;
 }
+.header .todo-list {
+  display: none;
+  border-radius: 3px;
+  position: absolute;
+  top: 95px;
+  left: 43%;
+  min-width: 280px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.header .todo-list__info {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.header .todo-list__info > i {
+  font-size: 1.2rem;
+}
+.header .todo-list__info > span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.header .todo-list.visible {
+  display: block;
+}
+.header .todo-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.header .todo-list__remove > * {
+  pointer-events: none;
+}
+.header .todo-list__remove i {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .mobile-header__overlay {
   position: fixed;
