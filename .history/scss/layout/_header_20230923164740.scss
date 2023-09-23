@@ -629,6 +629,7 @@
         left: 41%;
         width: 282px;
         background: #fff;
+        transition: all 0.2s e;
 
         @include screen(lg) {
             top: 45px;

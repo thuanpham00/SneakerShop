@@ -2501,14 +2501,15 @@ button {
   background: #706767;
 }
 .header .todo-list {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
   border-radius: 3px;
   position: absolute;
   top: 60px;
   left: 41%;
   width: 282px;
   background: #fff;
-  transition: all 0.2s linear;
 }
 @media (max-width: 991.98px) {
   .header .todo-list {
@@ -2561,7 +2562,9 @@ button {
   }
 }
 .header .todo-list.visible {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
 }
 .header .todo-list__item {
   display: flex;

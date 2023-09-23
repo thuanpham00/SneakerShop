@@ -629,6 +629,7 @@
         left: 41%;
         width: 282px;
         background: #fff;
+        transition: all 0.2s linear;
 
         @include screen(lg) {
             top: 45px;
@@ -678,7 +679,7 @@
         }
 
         &.visible {
-            @include visible;
+            display: block;
         }
 
         &__item {
