@@ -2505,9 +2505,28 @@ button {
   position: absolute;
   top: 95px;
   left: 43%;
-  min-width: 280px;
+  width: 280px;
   background: #fff;
   transition: all 0.2s linear;
+}
+@media (max-width: 991.98px) {
+  .header .todo-list {
+    left: 39%;
+    width: 175px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header .todo-list {
+    left: 42%;
+    width: 155px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .todo-list {
+    top: 90px;
+    left: 29%;
+    width: 180px;
+  }
 }
 .header .todo-list__info {
   display: flex;
@@ -2518,8 +2537,26 @@ button {
   font-size: 1.2rem;
 }
 .header .todo-list__info > span {
+  width: 200px;
+  padding-right: 5px;
   font-size: 1.3rem;
+  word-wrap: break-word;
   font-weight: 500;
+}
+@media (max-width: 991.98px) {
+  .header .todo-list__info > span {
+    width: 120px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header .todo-list__info > span {
+    width: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .todo-list__info > span {
+    font-size: 1rem;
+  }
 }
 .header .todo-list.visible {
   display: block;

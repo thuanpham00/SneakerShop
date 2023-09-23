@@ -626,24 +626,13 @@
         position: absolute;
         top: 95px;
         left: 43%;
-        width: 280px;
+        min-width: 280px;
         background: #fff;
         transition: all 0.2s linear;
 
         @include screen(lg) {
             left: 39%;
-            width: 175px;
-        }
-
-        @include screen(md) {
-            left: 42%;
-            width: 155px;
-        }
-
-        @include screen(sm) {
-            top: 90px;
-            left: 29%;
-            width: 180px;
+            min-width: 180px;
         }
 
         &__info {
@@ -656,23 +645,8 @@
             }
 
             > span {
-                width: 200px;
-                padding-right: 5px;
                 font-size: 1.3rem;
-                word-wrap: break-word;
                 font-weight: 500;
-
-                @include screen(lg) {
-                    width: 120px;
-                }
-
-                @include screen(md) {
-                    width: 100px;
-                }
-
-                @include screen(sm) {
-                    font-size: 1rem;
-                }
             }
         }
 

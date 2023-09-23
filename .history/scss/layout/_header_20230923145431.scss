@@ -635,17 +635,6 @@
             width: 175px;
         }
 
-        @include screen(md) {
-            left: 42%;
-            width: 155px;
-        }
-
-        @include screen(sm) {
-            top: 90px;
-            left: 29%;
-            width: 180px;
-        }
-
         &__info {
             display: flex;
             align-items: center;
@@ -663,15 +652,7 @@
                 font-weight: 500;
 
                 @include screen(lg) {
-                    width: 120px;
-                }
-
-                @include screen(md) {
-                    width: 100px;
-                }
-
-                @include screen(sm) {
-                    font-size: 1rem;
+                    width
                 }
             }
         }

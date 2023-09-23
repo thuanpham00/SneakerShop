@@ -636,14 +636,8 @@
         }
 
         @include screen(md) {
-            left: 42%;
+            left: 39%;
             width: 155px;
-        }
-
-        @include screen(sm) {
-            top: 90px;
-            left: 29%;
-            width: 180px;
         }
 
         &__info {
@@ -668,10 +662,6 @@
 
                 @include screen(md) {
                     width: 100px;
-                }
-
-                @include screen(sm) {
-                    font-size: 1rem;
                 }
             }
         }

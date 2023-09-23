@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
         const templateItem = `<div class="todo-list__item">
     <div class="todo-list__info">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <span class="todo-list__title line-clamp">${item}</span>
+        <span class="todo-list__title">${item} line-clamp</span>
     </div>
     <div class="todo-list__remove">
         <i class="fa-solid fa-x"></i>
