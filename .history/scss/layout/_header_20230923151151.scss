@@ -632,8 +632,8 @@
         transition: all 0.2s linear;
 
         @include screen(lg) {
-            top: 45px;
-            left: 42%;
+            top: 40px;
+            left: 39%;
             width: 175px;
         }
 
@@ -643,7 +643,7 @@
         }
 
         @include screen(sm) {
-            top: 35px;
+            top: 90px;
             left: 29%;
             width: 180px;
         }

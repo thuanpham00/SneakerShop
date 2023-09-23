@@ -626,14 +626,13 @@
         border-radius: 3px;
         position: absolute;
         top: 60px;
-        left: 41%;
-        width: 282px;
+        left: 11%;
+        width: 280px;
         background: #fff;
         transition: all 0.2s linear;
 
         @include screen(lg) {
-            top: 45px;
-            left: 42%;
+            left: 39%;
             width: 175px;
         }
 
@@ -643,7 +642,7 @@
         }
 
         @include screen(sm) {
-            top: 35px;
+            top: 90px;
             left: 29%;
             width: 180px;
         }
