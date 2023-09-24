@@ -279,7 +279,6 @@
             }
 
             @include screen(lg) {
-                font-size: 1.2rem;
                 width: 180px;
             }
 
@@ -292,7 +291,7 @@
                 border-radius: 20px 0 0 20px;
                 width: 130px;
                 padding: 0 10px 0 15px;
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
         }
 
@@ -652,6 +651,7 @@
             display: flex;
             align-items: center;
             column-gap: 5px;
+            padding-bottom: 2px;
 
             > i {
                 font-size: 1.2rem;
@@ -660,9 +660,9 @@
             > span {
                 width: 200px;
                 padding-right: 5px;
-                padding-bottom: 5px;
                 font-size: 1.3rem;
                 word-wrap: break-word;
+                padding-bottom: 5px;
                 font-weight: 500;
 
                 @include screen(lg) {
@@ -687,7 +687,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 0px;
+            padding: 5px 0px;
         }
 
         &__remove {

@@ -2155,6 +2155,7 @@ button {
 }
 @media (max-width: 991.98px) {
   .header-search__input {
+    font-size: 1.2rem;
     width: 180px;
   }
 }
@@ -2169,7 +2170,7 @@ button {
     border-radius: 20px 0 0 20px;
     width: 130px;
     padding: 0 10px 0 15px;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -2542,6 +2543,7 @@ button {
 .header .todo-list__info > span {
   width: 200px;
   padding-right: 5px;
+  padding-bottom: 5px;
   font-size: 1.3rem;
   word-wrap: break-word;
   font-weight: 500;
