@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
     todoForm.addEventListener("submit", function (e) {
         e.preventDefault();
         const todoInput = this.elements["todo"].value; 
-        // "todo" là name=  ""
+        // 
         console.log(todoInput);
         createItem(todoInput);
         todos.push(todoInput);
