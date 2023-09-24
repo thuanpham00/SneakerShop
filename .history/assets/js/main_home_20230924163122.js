@@ -534,16 +534,11 @@ window.addEventListener("load", function () {
     });
 
     // scroll animate fall
-    const fall = document.querySelector(".fall");
-    window.addEventListener(
-        "scroll",
-        debounceFn(function (e) {
-            const pageYFall = window.scrollY;
-            if (pageYFall > fall.offsetTop - fall.offsetHeight / 1.2) {
-                fall.classList.add("visible");
-            }
-        }, 100)
-    );
+    const fall = document.querySelector(".fall")
+    window.addEventListener("scroll", function(e) {
+        const pageYFall = window.scrollY;
+        fall.offset
+    })
 });
 
 // advertisement__banner-sidebar

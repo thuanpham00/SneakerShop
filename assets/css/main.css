@@ -2959,7 +2959,7 @@ button {
 }
 @media (max-width: 575.98px) {
   .recommend .line-clamp {
-    --line-clamp:1;
+    --line-clamp: 1;
   }
 }
 .recommend__pic {
@@ -3111,6 +3111,19 @@ button {
   transition: all 0.2s ease;
 }
 
+.fall {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  transform: scale(0);
+}
+.fall.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
 .fall__pic {
   display: block;
   width: 100%;

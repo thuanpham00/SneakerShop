@@ -539,6 +539,9 @@ window.addEventListener("load", function () {
         "scroll",
         debounceFn(function (e) {
             const pageYFall = window.scrollY;
+            console.log(pageYFall);
+            console.log(fall.offsetHeight);
+            console.log(fall.offsetTop);
             if (pageYFall > fall.offsetTop - fall.offsetHeight / 1.2) {
                 fall.classList.add("visible");
             }

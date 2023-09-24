@@ -175,7 +175,7 @@
 
     .line-clamp {
         @include screen(sm) {
-            --line-clamp: 1;
+            --line-clamp:1;
         }
     }
 
@@ -347,13 +347,11 @@
 
 .fall {
     @include hidden;
-    transition: all 0.2s ease;
-    transform: scale(0);
+    transition: all 0.2s linear;
     // dùng visibility và opacity cho phần tử ẩn đi mà vẫn chiếm không gian
 
     &.visible {
-        @include visible;
-        transform: scale(1);
+        @include visible
     }
 
     &__pic {

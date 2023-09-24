@@ -347,7 +347,7 @@
 
 .fall {
     @include hidden;
-    transition: all 0.2s ease;
+    transition: all 0.2s linear;
     transform: scale(0);
     // dùng visibility và opacity cho phần tử ẩn đi mà vẫn chiếm không gian
 
