@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop Sneaker, Shoes, Accessories etc...</title>
+        <!-- font Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- style slick slider -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- link tái sử dụng header footer-->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- header và tái sử dụng nhiều trang bằng cách nạp vào-->
+        <header id="header" class="header"></header>
+        <script>
+            load("header", "./template/header.html");
+        </script>
+
+        <main>
+            <!-- nav-list -->
+            <section class="nav">
+                <div class="container">
+                    <ul id="navPC" class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link active"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./sneaker.html" class="nav-list__link"
+                                >Sneaker</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./shoes.html" class="nav-list__link"
+                                >Shoes</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Clothes</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Trading Cards</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Accessories</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link"
+                                >Trending Deals</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- header mobile -->
+            <header class="mobile-header">
+                <div class="mobile-header__icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobile-header__overlay"></div>
+                <div class="mobile-header__menu">
+                    <div class="name">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo_admin/1.jpg"
+                                alt="Meecats"
+                                class="picture"
+                            />
+                        </a>
+                        <span class="name__thuan">Pham Thuan</span>
+                    </div>
+
+                    <ul id="navMobile"></ul>
+
+                    <script>
+                        const pcNav = document.querySelector("#navPC");
+                        const mobileNav = document.querySelector("#navMobile");
+
+                        mobileNav.innerHTML = pcNav.innerHTML;
+                    </script>
+                </div>
+            </header>
+
+            <!-- banner -->
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__thumb">
+                        <img
+                            src="./assets/img/banner/2.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/1.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/3.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/5.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/4.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/6.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/7.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner/8.jpg"
+                            alt=""
+                            class="banner__picture"
+                        />
+                        <img
+                            src="./assets/img/banner-2/1.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/2.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/3.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/4.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/5.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- recommend for u -->
+            <section class="recommend">
+                <div class="container">
+                    <div class="recommend__info info-1">
+                        <div class="recommend__heading">Recommend For You</div>
+                        <div class="recommend__logo">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-lg-6 row-cols-md-3 row-cols-2 recommend__list"
+                    >
+                        <!-- item 1 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/sneaker/recommend_5.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 1 Retro High Off-White Chicago
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">4414 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $6650</span
+                                ></a
+                            >
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/sneaker/recommend_2.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Nike SB Dunk Low Supreme Rammellzee
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">93 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $439</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/sneaker/recommend_3.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike SB Dunk Low Yuto Horigome
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">205 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                >
+                            </a>
+                        </div>
+
+                        <!-- item 4 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/sneaker/recommend_1.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 4 Retro Red Cement
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">50 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+
+                        <!-- item 5 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/sneaker/recommend_4.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 1 Retro Low OG SP Fragment x Travis
+                                    Scoot
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">992</span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $1187</span
+                                >
+                            </a>
+                        </div>
+
+                        <!-- item 6 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/sneaker/recommend_6.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High Off-White White (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">1500 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $1657</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- brand -->
+            <section class="brand">
+                <div class="container">
+                    <div class="brand__info">
+                        <div class="brand__heading">Popular Brands</div>
+                    </div>
+                    <div
+                        class="row row-cols-lg-5 row-cols-md-5 gx-md-1 row-cols-2 brand__list"
+                    >
+                        <!-- item 1 -->
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/home/popular_brand/1.webp"
+                                    alt="Sneaker"
+                                    class="brand__pic"
+                                />
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/home/popular_brand/2.webp"
+                                    alt="Sneaker"
+                                    class="brand__pic"
+                                />
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/home/popular_brand/3.webp"
+                                    alt="Sneaker"
+                                    class="brand__pic"
+                                />
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/home/popular_brand/4.webp"
+                                    alt="Sneaker"
+                                    class="brand__pic"
+                                />
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/home/popular_brand/5.webp"
+                                    alt="Sneaker"
+                                    class="brand__pic"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- recommend for u - part 2 -->
+            <section class="recommend">
+                <div class="container">
+                    <div class="recommend__info">
+                        <div class="recommend__info-left">
+                            <div class="recommend__heading">
+                                Trending Sneaker
+                            </div>
+                            <div class="recommend__logo">
+                                <i class="fa-solid fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="recommend__info-right">
+                            <a href="#!">See All</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-lg-6 row-cols-md-3 row-cols-2 recommend__list"
+                    >
+                        <!-- item 1 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/15.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 3 Retro Palomino
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">672 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/13.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG Spider-Man Across the
+                                    Spider-Verse (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">119 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $178</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 3 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/14.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Dunk Low Medium Curry
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">381 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 4 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/16.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low SE WRMK Sashiko Denim
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">160 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 5 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/17.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 5 Retro UNC University Blue
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">198 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 6 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/18.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Converse Chuck Taylor All-Star 70 Hi Comme
+                                    des Garcons PLAY Black
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">95 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- countdown timer -->
+            <section class="countDown">
+                <figure class="countDown__pic">
+                    <img src="" alt="" class="countDown__img">
+                </figure>
+                <div class="countDown__info">
+                    <ul class="countDown__list">
+                        <li class="countDown__item">
+                            <span class="number days">02</span>
+                            <span class="text"></span>
+                        </li>
+                        <li class="countDown__item">
+                            <span class="number days">10</span>
+                            <span class="text"></span>
+                        </li>
+                        <li class="countDown__item">
+                            <span class="number days">02</span>
+                            <span class="text"></span>
+                        </li>
+                        <li class="countDown__item">
+                            <span class="number days">02</span>
+                            <span class="text"></span>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="countDown__pic">
+                    <img src="" alt="" class="countDown__img">
+                </figure>
+            </section>
+
+            <!-- recommend for u - part 3 -->
+            <section class="recommend">
+                <div class="container">
+                    <div class="recommend__info">
+                        <div class="recommend__body">
+                            <div class="recommend__heading">
+                                Recently Viewed
+                            </div>
+                            <div class="recommend__logo">
+                                <i class="fa-solid fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="recommend__arrow">
+                            <button class="recommend__btn left-rcm">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="recommend__btn right-rcm">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row recommend__list rcm-2__list">
+                        <!-- item 1 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/15.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 3 Retro Palomino
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">155 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/13.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG Spider-Man Across the
+                                    Spider-Verse (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">119 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $178</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 3 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/14.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Dunk Low Medium Curry
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">116 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 4 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/16.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low SE WRMK Sashiko Denim
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">160 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 5 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/17.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 5 Retro UNC University Blue
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">165 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 6 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/18.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Converse Chuck Taylor All-Star 70 Hi Comme
+                                    des Garcons PLAY Black
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">95 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 7 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/15.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 3 Retro Palomino
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">155 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/13.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG Spider-Man Across the
+                                    Spider-Verse (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">192 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $178</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 9 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/14.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Dunk Low Medium Curry
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">116 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 10 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/7.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low SE WRMK Sashiko Denim
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">160 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 11 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/8.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 5 Retro UNC University Blue
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">165 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 12 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/9.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Converse Chuck Taylor All-Star 70 Hi Comme
+                                    des Garcons PLAY Black
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">92 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 13 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/10 (1).jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 3 Retro Palomino
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">155 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 14 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/11.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG Spider-Man Across the
+                                    Spider-Verse (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">382 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $178</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 15 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/31.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Dunk Low Medium Curry
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">112 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 16 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/32.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low SE WRMK Sashiko Denim
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">212 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 17 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/17.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 5 Retro UNC University Blue
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">426 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 18 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/29.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Converse Chuck Taylor All-Star 70 Hi Comme
+                                    des Garcons PLAY Black
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">95 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 19 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2//7.jpg"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 3 Retro Palomino
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">124 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 20 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/13.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG Spider-Man Across the
+                                    Spider-Verse (GS)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">115 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $178</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 21 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/14.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Dunk Low Medium Curry
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">311 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 22 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/16.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low SE WRMK Sashiko Denim
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">213 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 23 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/17.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 5 Retro UNC University Blue
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">219 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 24 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/18.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Converse Chuck Taylor All-Star 70 Hi Comme
+                                    des Garcons PLAY Black
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">95 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- recommend for u - part 4 -->
+            <section class="recommend">
+                <div class="container">
+                    <div class="recommend__info">
+                        <div class="recommend__info-left">
+                            <div class="recommend__heading">
+                                Most Popular Around You
+                            </div>
+                            <div class="recommend__logo">
+                                <i class="fa-solid fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="recommend__info-right">
+                            <a href="#!">See All</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-lg-6 row-cols-md-3 row-cols-2 recommend__list"
+                    >
+                        <!-- item 1 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/24.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Vans Slip-On Checkerboard
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">30 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 2 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/23.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Vans Skate Sk8-Hi One Piece Nami
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">60 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $778</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 3 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/22.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Adidas Yeezy Boost 700 Wave Runner
+                                    (2017/2023)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">116 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 4 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/21.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Nike Air Presto Hello Kitty (2022)
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">43 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 5 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/19.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Adidas Yeezy Boost 350 V2 Beluga Reflective
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">165 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 6 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/20.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Low Bred Toe
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">106 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seen-ins">
+                <div class="container">
+                    <h3 class="seen-ins__heading">As Seen On Instagram</h3>
+                    <p class="seen-ins__desc">
+                        Use #GotItOnStockX and you could be featured.
+                    </p>
+                    <div class="seen-ins__body">
+                        <div class="row seen-ins__list">
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/1.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/2.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/3.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/4.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/5.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/6.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/7.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/2.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/9.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/10.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/11.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/12.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/13.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/14.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/15.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/16.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                            <div class="seen-ins__item">
+                                <a href="#!" class="seen-ins__link">
+                                    <img
+                                        src="./assets/img/home/insta/17.webp"
+                                        alt=""
+                                        class="seen-ins__pic"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fall">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-7">
+                            <a href="#!" class="link">
+                                <img
+                                    src="./assets/img/home/fall/1.webp"
+                                    alt=""
+                                    class="fall__pic pic-1"
+                                />
+                            </a>
+                        </div>
+                        <div class="gx-lg-0 col-lg-5 gx-md-0 col-md-5 col-5">
+                            <a href="#!" class="link">
+                                <img
+                                    src="./assets/img/home/fall/2.webp"
+                                    alt=""
+                                    class="fall__pic pic-2"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- featured for u -->
+            <section class="recommend">
+                <div class="container">
+                    <div class="recommend__info info-1">
+                        <div class="recommend__heading">Recommend For You</div>
+                        <div class="recommend__logo">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-lg-6 row-cols-md-3 row-cols-2 recommend__list"
+                    >
+                        <!-- item 1 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/25.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 4 Retro Red Cement
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">250 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $259</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/26.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Nike SB Dunk Low Supreme Rammellzee
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">293 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $439</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/27.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike SB Dunk Low Yuto Horigome
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">205 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $347</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link">
+                                <img
+                                    src="./assets/img/home/sneaker-2/28.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Jordan 1 Retro High OG UNC Toe
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">160 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $187</span
+                                >
+                            </a>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/29.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title">
+                                    Nike Kobe 8 Protro Halo
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">179 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $297</span
+                                ></a
+                            >
+                        </div>
+                        <!-- item 6 -->
+                        <div class="recommend__item">
+                            <a href="#!" class="recommend__link"
+                                ><img
+                                    src="./assets/img/home/sneaker-2/30.png"
+                                    alt="Sneaker"
+                                    class="recommend__pic"
+                                />
+                                <div class="recommend__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3 class="recommend__title line-clamp">
+                                    Jordan 1 Retro High OG SP Union LA Bephies
+                                    Beauty Supply Summer of ‘96
+                                </h3>
+                                <p class="recommend__desc">Lowest Ask</p>
+                                <div class="recommend-row">
+                                    <span class="recommend__buy">200 </span>
+                                    <div class="recommend__usd">$</div>
+                                </div>
+                                <span class="recommend__sale"
+                                    >Last Sale: $242</span
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- banner 2 -->
+            <section class="banner" style="margin-top: 50px">
+                <div class="container">
+                    <div class="banner__thumb">
+                        <img
+                            src="./assets/img/banner-2/1.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/2.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/3.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/4.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                        <img
+                            src="./assets/img/banner-2/5.jpg"
+                            alt=""
+                            class="banner__picture banner-2"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- alert -->
+
+            <!-- name brand -->
+            <section class="name-brand">
+                <div class="container">
+                    <div
+                        class="row row-cols-lg-5 gx-lg-2 row-cols-md-5 row-cols-5 name-brand__inner"
+                    >
+                        <figure class="name-brand__item">
+                            <img
+                                src="./assets/img/home/name-brand/2.webp"
+                                alt=""
+                                class="name-brand__img"
+                            />
+                        </figure>
+                        <figure class="name-brand__item">
+                            <img
+                                src="./assets/img/home/name-brand/3.jpg"
+                                alt=""
+                                class="name-brand__img"
+                            />
+                        </figure>
+                        <figure class="name-brand__item">
+                            <img
+                                src="./assets/img/home/name-brand/1.webp"
+                                alt=""
+                                class="name-brand__img"
+                            />
+                        </figure>
+                        <figure class="name-brand__item">
+                            <img
+                                src="./assets/img/home/name-brand/4.jpg"
+                                alt=""
+                                class="name-brand__img"
+                            />
+                        </figure>
+                        <figure class="name-brand__item">
+                            <img
+                                src="./assets/img/home/name-brand/5.png"
+                                alt=""
+                                class="name-brand__img"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- advertisement-->
+            <section class="adver">
+                <div class="adver__thumb-1">
+                    <img
+                        src="./assets/img/home/qcao/1.jpg"
+                        alt=""
+                        class="adver__image"
+                    />
+                </div>
+                <div class="adver__thumb-2">
+                    <img
+                        src="./assets/img/home/qcao/3.jpg"
+                        alt=""
+                        class="adver__image"
+                    />
+                </div>
+            </section>
+
+            <!-- modal -->
+            <!-- <div class="modal">
+                <div class="container">
+                    <div class="modal__body">
+                        <figure class="modal__left">
+                            <h3 class="modal__heading">
+                                Nike SB Dunk Low Nike SB Dunk Low Nike SB Dunk
+                                Low
+                            </h3>
+                            <img
+                                src="./assets/img/home/sneaker-2/10 (1).jpg"
+                                alt=""
+                                class="modal__img"
+                            />
+                        </figure>
+                        <div class="modal__right">
+                            <div class="modal-sold">
+                                <img
+                                    src="./assets/img/home/modal/1.jpg"
+                                    alt=""
+                                    class="modal-sold__icon"
+                                />
+                                <div class="modal-sold__desc">
+                                    365 sold in Last 3 days!
+                                </div>
+                            </div>
+                            <div class="modal__box">
+                                <div class="modal-info">
+                                    <div class="modal-info__size">Size:</div>
+                                    <button class="modal-info__all">
+                                        <span>All</span>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </button>
+                                    <div class="modal-tableSize">
+                                        <div class="modal-tableSize__row">
+                                            <span class="modal-tableSize__size"
+                                                >All</span
+                                            >
+                                            <span class="modal-tableSize__price"
+                                                >$258</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="modal-tableSize__list row row-cols-lg-3"
+                                        >
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 4</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$1,327</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 4.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$600</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$354</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 5.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$458</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 6</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$258</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 6.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$277</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 7</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$304</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 7.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$327</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 8</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$325</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 8.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$328</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 9</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$340</span
+                                                >
+                                            </div>
+                                            <div class="modal-tableSize__item">
+                                                <span
+                                                    class="modal-tableSize__size"
+                                                    >US M 9.5</span
+                                                >
+                                                <span
+                                                    class="modal-tableSize__price"
+                                                    >$349</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-buy">
+                                    <div class="modal-buy__btn">
+                                        <a href="#!" class="modal-buy__link"
+                                            >Place Bid</a
+                                        >
+                                    </div>
+                                    <div class="modal-buy__btn btn-2">
+                                        <a href="#!" class="modal-buy__link"
+                                            >Buy for $263</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="modal-quantity">
+                                    <span>Số lượng</span>
+                                    <div class="modal-quantity__counter">
+                                        <button
+                                            class="modal-quantity__counterLeft"
+                                        >
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <span
+                                            class="modal-quantity__counterNumber"
+                                            >1</span
+                                        >
+                                        <button
+                                            class="modal-quantity__counterRight"
+                                        >
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__priceProduct">
+                                <div class="modal__priceProduct-row">
+                                    <span class="price">Amount:</span>
+                                    <span class="price">1</span>
+                                </div>
+                                <div class="modal__priceProduct-row">
+                                    <span class="price">Price:</span>
+                                    <span class="price">$1910</span>
+                                </div>
+                                <div class="modal__priceProduct-row">
+                                    <span class="price">Total:</span>
+                                    <span class="price priceTotal">$1910</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__icon">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- magazine -->
+            <section class="magazine">
+                <div class="container">
+                    <div class="recommend__info">
+                        <div class="recommend__body">
+                            <div class="recommend__heading">
+                                From The Magazine
+                            </div>
+                            <div class="recommend__logo">
+                                <i class="fa-solid fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="recommend__arrow">
+                            <a href="#!" style="color: #000">
+                                View All News Articles
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-2">
+                        <!-- item 1 -->
+                        <div class="magazine__item">
+                            <a href="#!" class="magazine__link">
+                                <img
+                                    class="magazine__img"
+                                    src="./assets/img/home/magazine/1.jpg"
+                                />
+                                <h3 class="magazine__title">
+                                    The Drop List 1-17-23
+                                </h3>
+                                <div class="magazine__date">
+                                    <span class="magazine__desc"
+                                        >1/18/2023</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="magazine__item">
+                            <a href="#!" class="magazine__link">
+                                <img
+                                    class="magazine__img"
+                                    src="./assets/img/home/magazine/3.jpg"
+                                />
+                                <h3 class="magazine__title">
+                                    The Drop List 10-10-23
+                                </h3>
+                                <div class="magazine__date">
+                                    <span class="magazine__desc"
+                                        >1/18/2023</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="magazine__item">
+                            <a href="#!" class="magazine__link">
+                                <img
+                                    class="magazine__img"
+                                    src="./assets/img/home/magazine/4.jpg"
+                                />
+                                <h3 class="magazine__title">
+                                    The Drop List 6-15-23
+                                </h3>
+                                <div class="magazine__date">
+                                    <span class="magazine__desc"
+                                        >1/18/2023</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="magazine__item">
+                            <a href="#!" class="magazine__link">
+                                <img
+                                    class="magazine__img"
+                                    src="./assets/img/home/magazine/5.jpg"
+                                />
+                                <h3 class="magazine__title">
+                                    The Drop List 12-9-23
+                                </h3>
+                                <div class="magazine__date">
+                                    <span class="magazine__desc"
+                                        >1/18/2023</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pop-up -->
+            <div class="pop-up hidden">
+                <div class="pop-up__body">
+                    <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Success!</span>
+                    <p class="desc">
+                        You have successfully added the product to your cart and
+                        proceed to checkout
+                    </p>
+                    <button class="btn btn-Popup">
+                        <a href="#!">Continue</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer và tái sử dụng nhiều trang -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("footer", "./template/footer.html");
+        </script>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="./assets/js/slick-slider.js"></script>
+        <script src="./assets/js/main_home.js"></script>
+        <script src="./assets/js/search.js"></script>
+    </body>
+</html>
