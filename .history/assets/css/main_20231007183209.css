@@ -1838,7 +1838,7 @@ button {
   font-size: 1.4rem;
   letter-spacing: 0px;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Suisse Intl";
 }
 .sneaker__desc {
   color: #000;
@@ -1851,11 +1851,11 @@ button {
   column-gap: 5px;
 }
 .sneaker__usd, .sneaker__buy {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Suisse Intl";
   color: #000;
   display: block;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .container {
@@ -2988,7 +2988,7 @@ button {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .recommend__sale {
   color: #000;
@@ -3439,8 +3439,8 @@ button {
 }
 .sneaker-body__heading {
   font-size: 3.2rem;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: -1px;
+  font-family: Suisse Intl;
+  letter-spacing: 1px;
 }
 .sneaker-body__desc {
   margin-top: 10px;
@@ -3470,9 +3470,9 @@ button {
   display: block;
   font-size: 1.8rem;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: Suisse Intl;
   letter-spacing: 0px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
   cursor: default;
   color: #000;

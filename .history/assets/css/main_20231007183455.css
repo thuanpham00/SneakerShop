@@ -1851,11 +1851,11 @@ button {
   column-gap: 5px;
 }
 .sneaker__usd, .sneaker__buy {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Suisse Intl";
   color: #000;
   display: block;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .container {
