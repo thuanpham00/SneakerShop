@@ -1795,10 +1795,6 @@ button {
   background: #006340;
 }
 
-.shoes-list {
-  margin-top: 10px;
-}
-
 .sneaker-list {
   margin-top: 10px;
 }
@@ -1815,7 +1811,7 @@ button {
   }
 }
 .sneaker__item:hover {
-  transform: scale(0.9);
+  transform: translateY(-10px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .sneaker__item > * {
@@ -1842,7 +1838,7 @@ button {
   font-size: 1.4rem;
   letter-spacing: 0px;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Suisse Intl";
 }
 .sneaker__desc {
   color: #000;
@@ -1855,11 +1851,11 @@ button {
   column-gap: 5px;
 }
 .sneaker__usd, .sneaker__buy {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Suisse Intl";
   color: #000;
   display: block;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .container {
@@ -3474,9 +3470,9 @@ button {
   display: block;
   font-size: 1.8rem;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: Suisse Intl;
   letter-spacing: 0px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
   cursor: default;
   color: #000;
@@ -3540,10 +3536,8 @@ button {
   column-gap: 10px;
 }
 .sneaker-content .sneaker-wrapper__btn .link-number {
-  border: none;
-  outline: none;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
