@@ -1,0 +1,13 @@
+{
+    "posts": [],
+    "product": [
+        {
+            "image": "./assets/img/page_shoes/1.png",
+            "title": "Jordan 4 Retro Red Cement",
+            "price": 194,
+            "id": 1
+        }
+    ],
+    "comments": [],
+    "profile": { "name": "typicode" }
+}

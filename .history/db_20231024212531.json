@@ -1,0 +1,13 @@
+{
+    "posts": [],
+    "product": 
+        {
+            id: 1,
+            title: '...',
+            body: '...',
+            userId: 1
+          }
+    ],
+    "comments": [],
+    "profile": { "name": "typicode" }
+}

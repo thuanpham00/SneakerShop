@@ -1,0 +1,28 @@
+{
+    "product": [
+        {
+            "image": "./assets/img/page_sneaker/27.png",
+            "title": "Jordan 4 Retro Red Cement",
+            "price": 194,
+            "id": 1
+        },
+        {
+            "image": "./assets/img/page_sneaker/2.png",
+            "title": "Crocs Classic Clog DreamWorks Shrek",
+            "price": 55,
+            "id": 2
+        },
+        {
+            "image": "./assets/img/page_sneaker/3.png",
+            "title": "UGG Tazz Slipper Mustard Seed (Women's)",
+            "price": 140,
+            "id": 3
+        },
+        {
+            "image": "./assets/img/page_sneaker/4.png",
+            "title": "UGG Tazz Slipper Mustard Seed (Women's)",
+            "price": 140,
+            "id": 3
+        },
+    ]
+}
