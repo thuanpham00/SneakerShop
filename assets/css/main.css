@@ -1815,7 +1815,7 @@ button {
   }
 }
 .sneaker__item:hover {
-  transform: translateY(-10px);
+  transform: scale(0.9);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .sneaker__item > * {
@@ -3540,8 +3540,10 @@ button {
   column-gap: 10px;
 }
 .sneaker-content .sneaker-wrapper__btn .link-number {
-  width: 30px;
-  height: 30px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
