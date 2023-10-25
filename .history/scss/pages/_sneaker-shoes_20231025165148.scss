@@ -1,0 +1,162 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1170px;
+}
+
+.sneaker {
+    &-head {
+        max-width: 1300px;
+        margin: 20px auto 0;
+    }
+
+    &-body {
+        border-radius: 5px;
+        min-height: 140px;
+        background: #f4f3f1;
+        padding: 30px 50px;
+
+        &__heading {
+            @include heading-h2;
+        }
+
+        &__desc {
+            margin-top: 10px;
+            @include desc;
+        }
+    }
+
+    &-content {
+        margin-top: 50px;
+
+        .sneaker-page {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .sneaker-sidebar {
+            @include screen(sm) {
+                display: none;
+            }
+            width: 20%; // tính % dựa trên container 1170px
+
+            .sneaker-column {
+                margin-bottom: 30px;
+
+                .title {
+                    display: block;
+                    @include title;
+                    margin-bottom: 5px;
+                    cursor: default;
+                    color: #000;
+
+                    @include screen(lg) {
+                        font-size: 1.2rem;
+                    }
+
+                    @include screen(md) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .sneaker-wrapper {
+            @include screen(sm) {
+                width: 100%;
+            }
+
+            width: 80%;
+
+            &__row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+
+                    a {
+                        display: block;
+                        @include desc;
+                        color: #000;
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    font-size: 1.5rem;
+
+                    .content {
+                        font-weight: 500;
+                    }
+
+                    i {
+                        font-size: 1rem;
+                    }
+
+                    > * {
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            &__btn {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+
+                .link-number {
+                    border: none;
+                    outline: none;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #eee;
+                    color: #000;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+
+                    &.active {
+                        background: #006340;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.special {
+    color: #006340 !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.sneaker-column__item {
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &.label {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before, &::after {
+            
+        }
+    }
+}

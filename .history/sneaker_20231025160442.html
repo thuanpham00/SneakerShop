@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop Sneaker, Shoes, Accessories etc...</title>
+        <!-- font Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="114x114"
+            href="/apple-icon-114x114.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="120x120"
+            href="/apple-icon-120x120.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="144x144"
+            href="/apple-icon-144x144.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="152x152"
+            href="/apple-icon-152x152.png"
+        />
+        <link
+            rel="shortcut icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- style slick slider -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- link tái sử dụng header footer-->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header"></header>
+        <script>
+            load("header", "./template/header.html");
+        </script>
+
+        <main>
+            <!-- nav-list -->
+            <section class="nav">
+                <div class="container">
+                    <ul id="navPC" class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a
+                                href="./sneaker.html"
+                                class="nav-list__link active"
+                                >Sneaker</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./shoes.html" class="nav-list__link"
+                                >Shoes</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Clothes</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Trading Cards</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Accessories</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link"
+                                >Trending Deals</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- header mobile -->
+            <header class="mobile-header">
+                <div class="mobile-header__icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobile-header__overlay"></div>
+                <div class="mobile-header__menu">
+                    <div class="name">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo_admin/1.jpg"
+                                alt="Meecats"
+                                class="picture"
+                            />
+                        </a>
+                        <span class="name__thuan">Pham Thuan</span>
+                    </div>
+
+                    <ul id="navMobile"></ul>
+
+                    <script>
+                        const pcNav = document.querySelector("#navPC");
+                        const mobileNav = document.querySelector("#navMobile");
+
+                        mobileNav.innerHTML = pcNav.innerHTML;
+                    </script>
+                </div>
+            </header>
+
+            <section class="sneaker-head">
+                <div class="sneaker-body">
+                    <h2 class="sneaker-body__heading">Sneakers</h2>
+                    <p class="sneaker-body__desc">
+                        Every sneaker you want is always available and verified
+                        by StockX. Buy and sell new sneakers & shoes from Air
+                        Jordan, adidas, Nike, Yeezy and more!
+                    </p>
+                </div>
+            </section>
+
+            <section class="sneaker-content">
+                <div class="container">
+                    <div class="sneaker-page">
+                        <div class="sneaker-sidebar">
+                            <div class="sneaker-column">
+                                <a href="./sneaker.html" class="title special"
+                                    >SNEAKER</a
+                                >
+                                <a href="./shoes.html" class="title">SHOES</a>
+                                <a href="#!" class="title">APPAREL</a>
+                                <a href="#!" class="title">ELECTRONICS</a>
+                                <a href="#!" class="title">TRADING CARDS</a>
+                                <a href="#!" class="title">COLLECTIBLES</a>
+                                <a href="#!" class="title">ACCESSORIES</a>
+                            </div>
+                            <div class="sneaker-column">
+                                <a href="#!" class="title">TRADING DEALS</a>
+                                <a href="#!" class="title">BELOW RETAIL</a>
+                            </div>
+                            <div class="sneaker-column">
+                                <a href="#!" class="title">ADIDAS</a>
+                                <a href="#!" class="title">AIR JORDAN</a>
+                                <a href="#!" class="title">ASICS</a>
+                                <a href="#!" class="title">NEW BALANCE</a>
+                                <a href="#!" class="title">NIKE</a>
+                                <a href="#!" class="title">PUMA</a>
+                                <a href="#!" class="title">REEBOK</a>
+                                <a href="#!" class="title">VANS</a>
+                                <a href="#!" class="title">YEEZY</a>
+                                <a href="#!" class="title">LUXURY BRANDS</a>
+                                <a href="#!" class="title">OTHER BRANDS</a>
+                                <a href="#!" class="title">COLLECTIONS</a>
+                            </div>
+                            <div class="sneaker-column">
+                                <a href="#!" class="title">PRICES</a>
+                                <div class="sneaker-column__item">
+                                    <input type="checkbox" id="checkYear">
+                                    <label for="checkYear">2023</label>
+                                </div>
+                                <div class="sneaker-column__item">
+                                    <input type="checkbox" id="checkYear1">
+                                    <label for="checkYear1">2022</label>
+                                </div>
+                                <div class="sneaker-column__item">
+                                    <input type="checkbox" id="checkYear2">
+                                    <label for="checkYear2">2021</label>
+                                </div>
+                                <div class="sneaker-column__item">
+                                    <input type="checkbox" id="checkYear3">
+                                    <label for="checkYear3">2020</label>
+                                </div>
+                                <div class="sneaker-column__item">
+                                    <input type="checkbox" id="checkYear4">
+                                    <label for="checkYear4">2019</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sneaker-wrapper">
+                            <div class="sneaker-wrapper__row">
+                                <div class="left">
+                                    <a href="./index.html">Home </a>
+                                    <span>/</span>
+                                    <a href="./sneaker.html" class="special"
+                                        >Sneakers
+                                    </a>
+                                </div>
+                                <div class="right">
+                                    <div class="content">Sort By:</div>
+                                    <span>Featured</span>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+
+                            <div
+                                class="row row-cols-lg-5 row-cols-md-4 row-cols-2 gy-lg-2 gy-md-2 gy-2 sneaker-list"
+                            >
+                                <!-- sneaker__item -->
+                            </div>
+
+                            <div class="sneaker-wrapper__btn">
+                                <a href="#!" class="link-number active">1</a>
+                                <a href="#!" class="link-number">2</a>
+                                <a href="#!" class="link-number">3</a>
+                                <span>...</span>
+                                <a href="#!" class="link-number" style="pointer-events: none;">20</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pop-up -->
+            <div class="pop-up hidden">
+                <div class="pop-up__body">
+                    <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span>Success!</span>
+                    <p class="desc">
+                        You have successfully added the product to your cart and
+                        proceed to checkout
+                    </p>
+                    <button class="btn btn-Popup">
+                        <a href="#!">Continue</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("footer", "./template/footer.html");
+        </script>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="./assets/js/main_shoes_sneaker.js"></script>
+        <script src="./assets/js/main_sneaker.js"></script>
+        <script src="./assets/js/slick-slider.js"></script>
+        <script src="./assets/js/search.js"></script>
+    </body>
+</html>
