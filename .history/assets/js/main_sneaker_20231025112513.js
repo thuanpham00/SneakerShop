@@ -1,6 +1,6 @@
 // call api
 const limit = 20;
-const endPointSneaker = `https://dm92v6-8080.csb.app/productSneaker?_limit=${limit}`;
+const endPointSneaker = `https://github.com/thuanpham00/e-commerce/productSneaker?_limit=${limit}`;
 const sneakerList = document.querySelector(".sneaker-list");
 let currentPage = 1;
 let data = [];
