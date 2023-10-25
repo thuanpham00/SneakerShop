@@ -38,7 +38,6 @@ async function getProductShoes(page = 1) {
     data = newData; // lưu cái data vào 1 mảng
     shoesList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
     if (data.length > 0 && Array.isArray(data)) {
-        loading.style.display = "none"
         data.forEach((item) => {
             renderItemShoes(item);
         });

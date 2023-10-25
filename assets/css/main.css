@@ -3572,6 +3572,24 @@ button {
   column-gap: 5px;
 }
 
+.image-loader {
+  position: fixed;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s infinite linear forwards;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #2979ff;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 .header-login {
   position: relative;
   position: sticky;

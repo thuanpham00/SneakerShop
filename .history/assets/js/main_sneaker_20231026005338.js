@@ -1,11 +1,11 @@
 // call api
 const loading = document.querySelector(".image-loader");
-let data = [];
-let currentPage = 1;
 const limit = 20;
-const endPointShoes = `https://dm92v6-8080.csb.app/productShoes?_limit=${limit}`;
-const shoesList = document.querySelector(".shoes-list");
-function renderItemShoes(item) {
+const endPointSneaker = `https://dm92v6-8080.csb.app/productSneaker?_limit=${limit}`;
+const sneakerList = document.querySelector(".sneaker-list");
+let currentPage = 1;
+let data = [];
+function renderItemSneaker(item) {
     const template = `<div class="sneaker__item">
     <a href="#!" class="sneaker__link"
         ><img
@@ -28,23 +28,23 @@ function renderItemShoes(item) {
         </div>
     </a>
 </div>`;
-    shoesList.insertAdjacentHTML("beforeend", template);
+    sneakerList.insertAdjacentHTML("beforeend", template);
 }
-// lấy dữ liệu từ json shoes và get ra giao diện
-async function getProductShoes(page = 1) {
-    const response = await fetch(`${endPointShoes}&_page=${currentPage}`);
-    const newData = await response.json();
+// lấy dữ liệu từ json sneaker và get ra giao diện
+async function getProductSneaker(page = 1) {
     loading.style.display = "block";
-    data = newData; // lưu cái data vào 1 mảng
-    shoesList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
+    const response = await fetch(`${endPointSneaker}&_page=${page}`);
+    const newData = await response.json();
+    data = newData; // thêm dữ liệu vào mảng
+    sneakerList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
     if (data.length > 0 && Array.isArray(data)) {
-        loading.style.display = "none"
+        loading.style.display = "block";
         data.forEach((item) => {
-            renderItemShoes(item);
+            renderItemSneaker(item);
         });
     }
 }
-getProductShoes();
+getProductSneaker();
 
 const numberPage = document.querySelectorAll(".link-number");
 [...numberPage].forEach((item, index) =>
@@ -53,7 +53,7 @@ const numberPage = document.querySelectorAll(".link-number");
         item.classList.add("active");
         const page = index + 1;
         currentPage = page;
-        getProductShoes(page);
+        await getProductSneaker(page);
     })
 );
 
@@ -204,8 +204,8 @@ function createModal(nameProduct, image, price) {
 </div>`;
     document.body.insertAdjacentHTML("beforeend", templateModal);
 }
-const shoesList1 = document.querySelector(".shoes-list");
-shoesList1.addEventListener("click", function (e) {
+const sneakerList1 = document.querySelector(".sneaker-list");
+sneakerList1.addEventListener("click", function (e) {
     if (e.target.matches(".sneaker__item")) {
         // click vào item nào thì từ item đó trỏ vào phần tử bên trong
         // xử lý hình

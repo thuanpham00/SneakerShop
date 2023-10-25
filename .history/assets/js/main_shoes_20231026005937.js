@@ -1,5 +1,5 @@
 // call api
-const loading = document.querySelector(".image-loader");
+const 
 let data = [];
 let currentPage = 1;
 const limit = 20;
@@ -34,11 +34,10 @@ function renderItemShoes(item) {
 async function getProductShoes(page = 1) {
     const response = await fetch(`${endPointShoes}&_page=${currentPage}`);
     const newData = await response.json();
-    loading.style.display = "block";
+
     data = newData; // lưu cái data vào 1 mảng
     shoesList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
     if (data.length > 0 && Array.isArray(data)) {
-        loading.style.display = "none"
         data.forEach((item) => {
             renderItemShoes(item);
         });
