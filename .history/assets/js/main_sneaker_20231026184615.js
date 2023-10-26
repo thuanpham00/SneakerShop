@@ -1,23 +1,7 @@
-function debounceFn(func, wait, immediate) {
-    let timeout;
-    return function () {
-        let context = this,
-            args = arguments;
-        let later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        let callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
-
 // call api
 const loading = document.querySelector(".image-loader");
 const limit = 20;
-const endPointSneaker = `https://dm92v6-8080.csb.app/productSneaker`;
+const endPointSneaker = `https://dm92v6-8080.csb.app/productSneaker?_limit=${limit}`;
 const sneakerList = document.querySelector(".sneaker-list");
 let currentPage = 1;
 let data = [];
@@ -49,9 +33,7 @@ function renderItemSneaker(item) {
 // lấy dữ liệu từ json sneaker và get ra giao diện
 async function getProductSneaker(page = 1) {
     loading.style.display = "block";
-    const response = await fetch(
-        `${endPointSneaker}?_limit=${limit}&_page=${page}`
-    );
+    const response = await fetch(`${endPointSneaker}&_page=${page}`);
     const newData = await response.json();
     data = newData; // thêm dữ liệu vào mảng
     sneakerList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
@@ -373,26 +355,34 @@ sneakerList1.addEventListener("click", function (e) {
     }
 });
 
-const filterInput = document.querySelector(".header-search__input");
-async function getProductFilter(link = endPointSneaker) {
-    const response = await fetch(link);
-    const data = await response.json();
-    sneakerList.innerHTML = "";
-    if (data.length > 0 && Array.isArray(data)) {
-        data.forEach((item) => {
-            renderItemSneaker(item);
-        });
-    }
+// xử lý input text _ local storage
+const inputSearch = document.querySelector(".header-search__input");
+inputSearch.addEventListener("click", function (e) {
+    todoList.classList.toggle("visible");
+});
+
+const todoForm = document.querySelector(".header-search__form");
+const todoList = document.querySelector(".todo-list");
+// nếu có localStorage thì chuyển từ chuỗi sang mảng || nếu ko có thì mảng rỗng
+let todos = JSON.parse(localStorage.getItem("todoList")) || [];
+if (Array.isArray(todos) && todos.length > 0) {
+    // check nó là mảng và có length > 0
+    [...todos].forEach((item) => createItem(item)); // tạo lại item lấy từ localStorage
 }
 
-filterInput.addEventListener(
-    "keydown",
-    debounceFn(function (e) {
-        let path = endPointSneaker;
-        if(e.target.value !== "") {
-            path = `${endPointSneaker}?title_like=${e.target.value}`;
-        } // nếu nó khác rỗng thì chạy theo cái fetch đó với dữ liệu nhập vào
-        // nếu nó rỗng thì fetch đủ dữ liệu về
-        getProductFilter(path)
-    }, 500)
-);
+
+todoForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const todoInput = this.elements["todo"].value;
+    // "todo" là name=  ""
+    console.log(todoInput);
+    createItem(todoInput);
+    todos.push(todoInput);
+    // thêm nó vào todos
+    // lưu dữ liệu vào localStorage
+    // chuyển dữ liệu thành chuỗi để bỏ vào
+    localStorage && localStorage.setItem("todoList", JSON.stringify(todos));
+    this.elements["todo"].value = "";
+});
+
+// remove localStorage

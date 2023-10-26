@@ -373,26 +373,26 @@ sneakerList1.addEventListener("click", function (e) {
     }
 });
 
-const filterInput = document.querySelector(".header-search__input");
+// xử lý input text _ local storage
 async function getProductFilter(link = endPointSneaker) {
     const response = await fetch(link);
-    const data = await response.json();
+    const newData = await response.json();
     sneakerList.innerHTML = "";
-    if (data.length > 0 && Array.isArray(data)) {
-        data.forEach((item) => {
+    if (newData.length > 0 && Array.isArray(newData)) {
+        newData.forEach((item) => {
             renderItemSneaker(item);
         });
     }
 }
-
+getProductFilter();
+const filterInput = document.querySelector(".filter");
 filterInput.addEventListener(
     "keydown",
     debounceFn(function (e) {
         let path = endPointSneaker;
-        if(e.target.value !== "") {
+        if (e.target.value !== "") {
             path = `${endPointSneaker}?title_like=${e.target.value}`;
-        } // nếu nó khác rỗng thì chạy theo cái fetch đó với dữ liệu nhập vào
-        // nếu nó rỗng thì fetch đủ dữ liệu về
-        getProductFilter(path)
+        }
+        getProductFilter(path);
     }, 500)
 );

@@ -374,8 +374,8 @@ sneakerList1.addEventListener("click", function (e) {
 });
 
 const filterInput = document.querySelector(".header-search__input");
-async function getProductFilter(link = endPointSneaker) {
-    const response = await fetch(link);
+async function getProductFilter() {
+    const response = await fetch(endPointSneaker);
     const data = await response.json();
     sneakerList.innerHTML = "";
     if (data.length > 0 && Array.isArray(data)) {
@@ -388,11 +388,6 @@ async function getProductFilter(link = endPointSneaker) {
 filterInput.addEventListener(
     "keydown",
     debounceFn(function (e) {
-        let path = endPointSneaker;
-        if(e.target.value !== "") {
-            path = `${endPointSneaker}?title_like=${e.target.value}`;
-        } // nếu nó khác rỗng thì chạy theo cái fetch đó với dữ liệu nhập vào
-        // nếu nó rỗng thì fetch đủ dữ liệu về
-        getProductFilter(path)
+        let path = endPointSneaker
     }, 500)
 );

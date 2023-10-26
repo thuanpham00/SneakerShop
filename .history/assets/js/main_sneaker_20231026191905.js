@@ -392,7 +392,7 @@ filterInput.addEventListener(
         if(e.target.value !== "") {
             path = `${endPointSneaker}?title_like=${e.target.value}`;
         } // nếu nó khác rỗng thì chạy theo cái fetch đó với dữ liệu nhập vào
-        // nếu nó rỗng thì fetch đủ dữ liệu về
+        // nếu nó rỗng thì 
         getProductFilter(path)
     }, 500)
 );
