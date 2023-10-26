@@ -70,7 +70,7 @@ const numberPage = document.querySelectorAll(".link-number");
         const page = index + 1;
         currentPage = page;
         await getProductSneaker(page);
-        window.scroll(0,200)
+        window.scrollTo(0,200)
     })
 );
 
@@ -370,3 +370,4 @@ sneakerList1.addEventListener("click", function (e) {
         });
     }
 });
+

@@ -1,27 +1,11 @@
-function debounceFn(func, wait, immediate) {
-    let timeout;
-    return function () {
-        let context = this,
-            args = arguments;
-        let later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        let callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
-
 // call api
 const loading = document.querySelector(".image-loader");
-const limit = 20;
-const endPointSneaker = `https://dm92v6-8080.csb.app/productSneaker?_limit=${limit}`;
-const sneakerList = document.querySelector(".sneaker-list");
-let currentPage = 1;
 let data = [];
-function renderItemSneaker(item) {
+let currentPage = 1;
+const limit = 20;
+const endPointShoes = `https://dm92v6-8080.csb.app/productShoes?_limit=${limit}`;
+const shoesList = document.querySelector(".shoes-list");
+function renderItemShoes(item) {
     const template = `<div class="sneaker__item">
     <a href="#!" class="sneaker__link"
         ><img
@@ -44,23 +28,23 @@ function renderItemSneaker(item) {
         </div>
     </a>
 </div>`;
-    sneakerList.insertAdjacentHTML("beforeend", template);
+    shoesList.insertAdjacentHTML("beforeend", template);
 }
-// lấy dữ liệu từ json sneaker và get ra giao diện
-async function getProductSneaker(page = 1) {
-    loading.style.display = "block";
-    const response = await fetch(`${endPointSneaker}&_page=${page}`);
+// lấy dữ liệu từ json shoes và get ra giao diện
+async function getProductShoes(page = 1) {
+    const response = await fetch(`${endPointShoes}&_page=${currentPage}`);
     const newData = await response.json();
-    data = newData; // thêm dữ liệu vào mảng
-    sneakerList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
+    loading.style.display = "block";
+    data = newData; // lưu cái data vào 1 mảng
+    shoesList.innerHTML = ""; // trước khi render product thì nội dung của nó rỗng
     if (data.length > 0 && Array.isArray(data)) {
-        loading.style.display = "none";
+        loading.style.display = "none"
         data.forEach((item) => {
-            renderItemSneaker(item);
+            renderItemShoes(item);
         });
     }
 }
-getProductSneaker();
+getProductShoes();
 
 const numberPage = document.querySelectorAll(".link-number");
 [...numberPage].forEach((item, index) =>
@@ -69,8 +53,8 @@ const numberPage = document.querySelectorAll(".link-number");
         item.classList.add("active");
         const page = index + 1;
         currentPage = page;
-        await getProductSneaker(page);
-        window.scroll(0,200)
+        getProductShoes(page);
+        window.scr
     })
 );
 
@@ -221,8 +205,8 @@ function createModal(nameProduct, image, price) {
 </div>`;
     document.body.insertAdjacentHTML("beforeend", templateModal);
 }
-const sneakerList1 = document.querySelector(".sneaker-list");
-sneakerList1.addEventListener("click", function (e) {
+const shoesList1 = document.querySelector(".shoes-list");
+shoesList1.addEventListener("click", function (e) {
     if (e.target.matches(".sneaker__item")) {
         // click vào item nào thì từ item đó trỏ vào phần tử bên trong
         // xử lý hình

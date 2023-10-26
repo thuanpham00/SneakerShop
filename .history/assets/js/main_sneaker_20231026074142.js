@@ -70,7 +70,8 @@ const numberPage = document.querySelectorAll(".link-number");
         const page = index + 1;
         currentPage = page;
         await getProductSneaker(page);
-        window.scroll(0,200)
+        // const a = sneakerList1.scrollY;
+        sneakerList1.scroll(200,200)
     })
 );
 
@@ -221,7 +222,7 @@ function createModal(nameProduct, image, price) {
 </div>`;
     document.body.insertAdjacentHTML("beforeend", templateModal);
 }
-const sneakerList1 = document.querySelector(".sneaker-list");
+
 sneakerList1.addEventListener("click", function (e) {
     if (e.target.matches(".sneaker__item")) {
         // click vào item nào thì từ item đó trỏ vào phần tử bên trong
@@ -370,3 +371,8 @@ sneakerList1.addEventListener("click", function (e) {
         });
     }
 });
+
+window.addEventListener("scroll", debounceFn(function() {
+    const pageYSneakerList = window.scrollY;
+    console.log(pageYSneakerList)
+},100))

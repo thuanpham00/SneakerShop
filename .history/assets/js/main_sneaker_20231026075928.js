@@ -65,6 +65,7 @@ getProductSneaker();
 const numberPage = document.querySelectorAll(".link-number");
 [...numberPage].forEach((item, index) =>
     item.addEventListener("click", async function () {
+        loading.style.display = ""
         [...numberPage].forEach((item) => item.classList.remove("active"));
         item.classList.add("active");
         const page = index + 1;
