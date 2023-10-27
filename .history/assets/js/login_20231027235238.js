@@ -182,11 +182,23 @@ window.addEventListener("load", function () {
         const hihi = e.target.parentNode.parentNode;
         hihi.classList.add("hidden")
         hihi.classList.remove("visible");
+        // console.log(formBig)
+        // formBig.classList
         const SignUp = formSign.parentNode.nextElementSibling;
         const LogIn = formLogin.parentNode.nextElementSibling.nextElementSibling
         SignUp.classList.remove("big-2")
         LogIn.classList.add("big-2")
-        const lineChange = document.querySelector(".line");
-        lineChange.style.transform = "translateX(0%)"
+        // const line = document.createElement("div");
+        // line.className = "line";
+        // formLogin.appendChild(line);
+        // const cords = e.target.getBoundingClientRect();
+        // const { width, height, top, left } = cords;
+        // line.style.width = `${width}px`;
+        // line.style.top = `${top - 300}px`;
+        // line.style.transform = `translateX(0%)`;
+        // remove line form sign up
+        const linee = e.target.parentNode.querySelector(".line");
+        console.log(linee)
+        // linee.parentNode.removeChild(linee);
     })
 });

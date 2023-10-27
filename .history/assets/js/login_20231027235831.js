@@ -186,7 +186,7 @@ window.addEventListener("load", function () {
         const LogIn = formLogin.parentNode.nextElementSibling.nextElementSibling
         SignUp.classList.remove("big-2")
         LogIn.classList.add("big-2")
-        const lineChange = document.querySelector(".line");
-        lineChange.style.transform = "translateX(0%)"
+        const linee = document.querySelector(".line");
+        linee.style.transform = "translateX(0%)"
     })
 });

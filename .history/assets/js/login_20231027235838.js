@@ -187,6 +187,6 @@ window.addEventListener("load", function () {
         SignUp.classList.remove("big-2")
         LogIn.classList.add("big-2")
         const lineChange = document.querySelector(".line");
-        lineChange.style.transform = "translateX(0%)"
+        linee.style.transform = "translateX(0%)"
     })
 });
