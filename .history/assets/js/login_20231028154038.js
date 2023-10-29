@@ -201,7 +201,7 @@ window.addEventListener("load", function () {
     }
     
     async function login() {
-        const data = await getDataLogin();
+        const data = getDataLogin();
         const formLogin = document.querySelector(".form-body.form-2");
         formLogin.addEventListener("submit", function(e) {
             e.preventDefault()

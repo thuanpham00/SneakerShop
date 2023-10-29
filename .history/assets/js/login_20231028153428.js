@@ -197,26 +197,7 @@ window.addEventListener("load", function () {
     async function getDataLogin() {
         const response = await fetch(endPoint);
         const data = await response.json();
-        return data;
+        console.log(data)
     }
-    
-    async function login() {
-        const data = await getDataLogin();
-        const formLogin = document.querySelector(".form-body.form-2");
-        formLogin.addEventListener("submit", function(e) {
-            e.preventDefault()
-            const email = this.elements["email2"].value
-            const pass = this.elements["password2"].value
-            
-            // dò tìm trong db && data là mảng nên dò tìm từng phần tử
-            const founder = data.find(item => item.email === email && item.pass === pass)
-
-            if(founder) {
-                alert("đăng nhập thành công")
-            } else {
-                alert("đăng nhập thất bại")
-            }
-        })
-    }
-    login()
+    getDataLogin()
 });

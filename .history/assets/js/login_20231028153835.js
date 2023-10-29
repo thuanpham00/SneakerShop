@@ -201,7 +201,7 @@ window.addEventListener("load", function () {
     }
     
     async function login() {
-        const data = await getDataLogin();
+        const data = getDataLogin();
         const formLogin = document.querySelector(".form-body.form-2");
         formLogin.addEventListener("submit", function(e) {
             e.preventDefault()
@@ -209,14 +209,7 @@ window.addEventListener("load", function () {
             const pass = this.elements["password2"].value
             
             // dò tìm trong db && data là mảng nên dò tìm từng phần tử
-            const founder = data.find(item => item.email === email && item.pass === pass)
-
-            if(founder) {
-                alert("đăng nhập thành công")
-            } else {
-                alert("đăng nhập thất bại")
-            }
+            const founder = data.forEach(item => item.email)
         })
     }
-    login()
 });
