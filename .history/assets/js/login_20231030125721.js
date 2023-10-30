@@ -17,8 +17,8 @@ window.addEventListener("load", function () {
         e.target.classList.toggle("fa-eye-slash");
         if (password2.type == "password") {
             password2.type = "text";
-        } else if (password2.type == "text") {
-            password2.type = "password";
+        } else if (password.type == "text") {
+            password.type = "password";
         }
     });
 

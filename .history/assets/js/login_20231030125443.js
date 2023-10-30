@@ -11,16 +11,9 @@ window.addEventListener("load", function () {
         }
     });
 
-    const iconPassword2 = document.querySelector(".form-control.form-2 i")
-    iconPassword2.addEventListener("click", function (e) {
-        e.target.classList.toggle("fa-eye");
-        e.target.classList.toggle("fa-eye-slash");
-        if (password2.type == "password") {
-            password2.type = "text";
-        } else if (password2.type == "text") {
-            password2.type = "password";
-        }
-    });
+    const iconPassword2 = document.querySelector(".form-control form-2")
+
+
 
     // xử lý sign up
     const form = document.querySelector(".form-body");

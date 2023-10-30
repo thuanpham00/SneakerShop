@@ -15,12 +15,14 @@ window.addEventListener("load", function () {
     iconPassword2.addEventListener("click", function (e) {
         e.target.classList.toggle("fa-eye");
         e.target.classList.toggle("fa-eye-slash");
-        if (password2.type == "password") {
-            password2.type = "text";
-        } else if (password2.type == "text") {
-            password2.type = "password";
+        if (password.type == "password") {
+            password.type = "text";
+        } else if (password.type == "text") {
+            password.type = "password";
         }
     });
+
+
 
     // xử lý sign up
     const form = document.querySelector(".form-body");

@@ -666,20 +666,20 @@
             "email": "phamminhthuan912@gmail.com",
             "pass": "thuan912@M",
             "id": 1
-        },
-        {
+          },
+          {
             "firstName": "thuan",
             "lastName": "pham",
             "email": "thuanpham912@gmail.com",
             "pass": "thuan912@M",
             "id": 2
-        },
-        {
+          },
+          {
             "firstName": "thuan",
             "lastName": "pham",
             "email": "phamminhthuan912@gmail.com",
             "pass": "Thuanpham99@",
             "id": 3
-        }
+          }
     ]
 }
