@@ -1908,13 +1908,16 @@ button {
     margin-left: 0;
   }
 }
+.header-top__info:nth-child(2) {
+  justify-content: flex-end;
+}
 .header-top__body:first-child {
   margin-left: 10px;
 }
 .header-top__body {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 5px;
   margin-left: 15px;
   font-size: 1.2rem;
 }
@@ -3782,6 +3785,29 @@ button {
 }
 .form-big.big-2 {
   display: block;
+}
+
+#accountName {
+  margin-right: 5px;
+  padding: 5px;
+  width: 40px;
+  height: 10px;
+  background: #d10024;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+
+.logout-link {
+  width: 40px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  color: #d10024;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
 
 /*# sourceMappingURL=main.css.map */
