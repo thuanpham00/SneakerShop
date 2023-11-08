@@ -61,7 +61,7 @@ async function getProductShoes(page = 1) {
     }
 }
 getProductShoes();
-// phân trang
+
 const numberPage = document.querySelectorAll(".link-number");
 [...numberPage].forEach((item, index) =>
     item.addEventListener("click", async function () {

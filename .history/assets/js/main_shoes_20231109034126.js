@@ -19,7 +19,7 @@ const loading = document.querySelector(".image-loader");
 let data = [];
 let currentPage = 1;
 const limit = 20;
-const endPointShoes = `https://dm92v6-8080.csb.app/productShoes?_limit=${limit}`;
+const endPointShoes = `https://dm92v6-8080.csb.app/productShoes/?_limit=${limit}`;
 const shoesList = document.querySelector(".shoes-list");
 function renderItemShoes(item) {
     const template = `<div class="sneaker__item">
@@ -61,7 +61,7 @@ async function getProductShoes(page = 1) {
     }
 }
 getProductShoes();
-// phân trang
+
 const numberPage = document.querySelectorAll(".link-number");
 [...numberPage].forEach((item, index) =>
     item.addEventListener("click", async function () {

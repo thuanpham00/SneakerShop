@@ -5,14 +5,28 @@ $(document).ready(function () {
         infinite: true,
         arrows: true,
         draggable: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow:
             "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:
             "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-    
-        });
+        dots: true,
+    });
+    $(".seenzzzzz-ins__list").slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        prevArrow:
+            "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:
+            "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    });
 });
 
 // slidesToShow : 3 (số lượng phần tử hiển thị 1 lần) ví dụ 1 lần hiện 3 cái
@@ -22,4 +36,4 @@ $(document).ready(function () {
 // autoplay: true,
 // autoplaySpeed: 2000, kết hợp 2 cái lại tự chạy sau 1 khoảng thời gian
 // draggable: false, tắt chức năng scroll hình bằng chuột
-//
+// dots: dấu chấm
